@@ -1,0 +1,21 @@
+.wor-text-c{text-align:center;}
+.wor-text-r{text-align:right;}
+.wor-text-l{text-align:left;}
+
+tfoot.wor-table-details td{border-bottom:hidden; border-left:hidden; border-right:hidden;}
+.wor-title{
+	display:block; 
+	padding: .3em .5em; 
+	margin-right: .4em; 
+	background-color:#F0F0F0; 
+	color:#000099; 
+	font-weight:bold;
+}
+
+.wor-bold{font-weight:bold;}
+
+span.required{
+	font-weight:bold;
+	font-size:1.5em;
+	color:red;
+}

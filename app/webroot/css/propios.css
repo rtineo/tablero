@@ -1,0 +1,13 @@
+.sinBorde {
+		border-width: 0px;
+	}
+/*Para mi buscador*/
+
+.hover {
+background-color:#C9DAEF !important;
+cursor:pointer;
+}
+
+.seleccion {  
+  background-color: #afa;
+}

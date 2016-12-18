@@ -1,0 +1,1 @@
+window.opener.reload_parent();

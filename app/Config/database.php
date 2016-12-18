@@ -60,12 +60,12 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => 'Database/Mysql',
+		'datasource' => 'Database/Postgres',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'login' => 'postgres',
+		'password' => 'cobalto',
+		'database' => 'tablero',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

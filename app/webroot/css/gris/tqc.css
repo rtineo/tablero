@@ -1,0 +1,15 @@
+thead th {background-color:#F0F0F0;}
+th a {color:#000099;}
+
+
+#contenido h3#tituloTable {
+	background-color:#F0F0F0;
+	color:#000099;
+	display:block;
+	font-weight:bold;
+	margin-right:0.4em;
+	padding:0.3em 0.5em;
+}
+
+#menu  ul {background-color:#009eba; font-weight:bold;}
+.box {padding:6px;border:1px #009eba solid;margin-right:8px;margin-bottom:15px;background:#fff;}

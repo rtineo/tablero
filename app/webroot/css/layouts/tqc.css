@@ -1,0 +1,376 @@
+body#general{background-color:#EEEEFF;}
+
+/* cabeza ------------------------------------------------------------------------------------------ */
+/*#cabeza{background-image: url("../../img/cabeza_tqc.png"); height:100px; text-align: left; }*/
+#cabeza h1 {margin-bottom: 0px;}
+#datosUsuario {font-size:.8em;padding-top:2px;background-color:#FFFFFF;
+			border:1px solid #D8EDF3; border-bottom:none;}
+
+/*#datosUsuario, #datosUsuario a {color: #000;}
+*/
+/* segundo contenedor -------------------------------------------------------------------------- */
+#contenedorCuerpo{background-color: #EEEEFF; min-height:400px; border: 1px #d8edf3 solid;}
+#contenedorCuerpoAsignacion{background-color: #EEEEFF; min-height:500px; border: 1px #d8edf3 solid;}
+#SecassignSecassign{margin-top: 50px;}
+/*#contenedorCuerpoLogin{background-color: #A41818; min-height:564px; border:none; background-image: url("../../img/derco-back.jpg")}*/
+#SecpersonLoginForm{background:url(../../img/derco-bg-acceso2.gif) no-repeat center;
+	padding: 45px;
+	border: 2px;
+	border-radius:40px;
+	background-position: center;
+	-moz-border-radius: 40px;
+	-webkit-border-radius : 40px;
+	position:fixed;
+	top:120px;
+	left:390px;
+	text-align:center; 
+	width:500px}
+#contenedorCuerpoAcciones{background-color: #EEEEFF; min-height:400px; border:none;}
+
+/* Logueo ------------------------------------------------------------------------------------------- */
+#logout{background-color:#FCFCFC}
+
+/* menu ---------------------------------------------------------------------------------------------  */
+
+#menu-acos1 ul {color:#333333;font-weight:bold !important;} 
+#menu-acos1 ul span{padding-left:.3em;} 
+
+#menu ul, #menu ol, #menu li {list-style-type:none;display:block;}
+
+#menu  ul {background-color:#E0FFFF; font-weight:bold;}
+
+
+
+#menu ul li a{
+	display:block;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+.treeview a.selected {
+	display:block;
+	background:#fff url(../../img/arrow_right.gif) no-repeat scroll 0 3px;
+	padding:2px 6px 2px 20px !important;
+}
+
+/*
+#menu ul li a{
+	display:block;
+	text-decoration:none;
+	color:#483D8B;
+	background:#fff url(../../img/arrow_right.gif) no-repeat scroll 0 3px;
+	padding:2px 6px 2px 20px;
+	font-weight:normal;
+}
+#menu ul li a:hover, tr.selected, td.selected , a.selected{
+	text-decoration: underline;
+	background:#eaf5fb url(../../img/arrow_select.png) no-repeat 0 3px;
+	color:#040017;
+}
+*/
+/* contenido ---------------------------------------------------------------------------------------- */
+#contenido h3#tituloTable,h3.tituloTable  {display:block; padding: .3em .5em;  
+						background-color:#88AAEE; color:#FFFFFF; font-weight:bold;}
+#contenido #buscador{text-align: right !important;}
+
+/* tablas con los datos ------------------------------------------------------------------------------ */
+
+#contenido .table {
+	padding: 0 1.5em 0 0;
+	border-collapse: collapse;
+	border-spacing:0px;
+}
+
+th{border: 1px #b4b4b4 solid;color:#009;}
+th a{color:#000099;}
+td{ border: 1px #c7c7c7 solid;}
+th, td.actions{text-align: center;}
+th, td.actionsfijo{text-align: center; width: 69px;}
+tr.over td{background:#d6e4f5;} 
+tr.selectRowTables td {background:#f2e971;}
+
+tr.artVencido td{background:#ff1302; color:#fff; font-weight:bold;}
+
+/* paginacion ------------------------------------------------- **/
+#paging table {/*margin-bottom:20px;*/border-collapse:hidden;border-spacing:0px;}
+#paging table th, #paging table tbody td {border:none;}
+#paging table tr.over td,#paging table tbody tr.selectRowTables td  {background:none;}
+#paging table td {width:33%;}
+
+#paging .paging .disabled {display:inline;}
+#logout, #paging .contador {text-align:right;}
+
+/* = LOGIN Y OTROS ==================================================== */
+#contenidoLogin{background-color:#c9daef;padding-top:2em; padding-bottom:2em;}
+#cabezaAcciones{background-image: url("../../img/cabezaAcciones_tqc.JPG"); height:100px; text-align: right; }
+
+.ingresarDatos, .modificarDatos, .verDatos{text-align:left;padding-top:1em; padding-bottom:2em;}
+.ingresarDatos > h3, .modificarDatos > h3, .verDatos > h3 {text-align:center;}
+#cabezaAcciones{background-image: url("../../img/cabezaAcciones_tqc.JPG"); height:100px; text-align: right; }
+.ingresarDatos #rowLast, .modificarDatos #rowLast, .verDatos #rowLast{margin-bottom: 10px;}
+.botones,.paging, #titulo{text-align: center; padding-top:5px;}
+.botones #datosPersona {text-align: left;} 
+
+.divDataForm{
+	padding-bottom:3px;
+}
+
+/* -- avisos --------------------------------------------------------- */
+.message {background-color: #ffffb7;}
+
+
+/*-- pie de pajina ----------------------------------------------- */
+#pie{font-size:.8em; text-align: right !important;}
+
+
+/* --- code -- */
+ .button_off, .button_press {
+ 	/*
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-topright:3px;
+	*/
+	background-color:#F3F3F3;
+	border:1px solid #BABABA;
+	color:#5D5D5D;
+	font-family:"Trebuchet MS",Verdana;
+	font-size:12px;
+	width:19px;
+	height:19px;
+	margin:0;
+	margin-bottom:1px;
+	margin-right:1px;
+	padding:0;
+	text-align:center;
+}
+
+.input_error{
+	background-color:#FF0000 !important;
+}
+/*-- REPORTES ----------------------------------------------- */
+.kardexRepor .box{
+	border : none;
+	margin-bottom: 0px; 
+}
+
+.kardexRepor td.sinborder, .kardexRepor fieldset{
+	border:none;
+}
+
+.kardexRepor div.conBorde{
+	display: inline;
+}
+
+.kardexRepor fieldset legend{
+	font-size: small;
+}
+
+
+/*para tabla sin estilo*/
+table.sinEstilos th, table.sinEstilos td{
+	border:none;
+}
+
+table.sinEstilos thead th {
+	/*background-color: #3F606B;*/
+}
+
+#absoluto {
+	border: 2px solid #CCC;
+	padding: 1em;
+	margin: 1em 0 1em 4em;
+	width: 300px;	
+}
+
+
+#button { text-decoration: none; }
+#effect { padding: 0.4em; position:relative;}
+#effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+.ui-effects-transfer { border: 2px dotted gray; } 
+
+/* buscador para orden compra*/
+#resultadoBusqueda{
+	overflow-x: scroll;
+	padding: 10px;
+}
+td.textd, .textd, input.textd {
+	text-align:right;
+}
+td.textc, .textc, input.textc {
+	text-align:center;
+}
+
+td.amarillo{
+	background-color:#ffffb7;
+}
+
+#titulo{
+	background-color: #e53a28; /*#2977C1;*/
+	color:#000099;
+	border:1px solid #B4B4B4;
+}
+
+#resultadoBusqueda2{
+	overflow-y:scroll;
+	overflow-x:hidden;
+	padding: 10px;
+	height: 300px;
+}
+#resultadoBusqueda3{
+	overflow-y:scroll;
+	padding: 10px;
+	height: 300px;
+}
+
+#scroll_x{
+	overflow-y:scroll;
+	overflow-x:scroll;
+	padding: 10px;
+	height: 350px;
+}
+
+fieldset.subtitulo legend{
+	border: 1px solid rgb(180, 180, 180); margin-left: 10px; padding-left: 5px; padding-right: 5px;
+	background-color:#F0F0F0;
+	color:#000099;
+}
+fieldset.subtitulo{
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+#indexestados{
+	overflow-y:scroll;
+	overflow-x:scroll;
+	padding: 10px;
+	height: 280px;
+}
+/*calendario mes*/
+table.calendarioMes {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	width:100%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+table.calendarioMes th {
+    background-color: #F0F0F0;
+    padding: 2pt;
+    border-right: 1px solid #89d;
+    border-bottom: 1px solid #89d;
+}
+table.calendarioMes th.feriado {
+    color: #f00;
+}
+table.calendarioMes td {
+    background-color: #fff;
+    padding: 2pt;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width: 30px;
+    height: 35px;
+    text-align: left;
+    vertical-align: top;
+}
+table.calendarioMes td:hover {
+    background-color: #ffa;
+}
+table.calendarioMes td.actual {
+    background-color: #fff;
+	color: #aaa;
+	border: 3px solid #abf;
+}
+table.calendarioMes td a {
+	color: #aaa;
+    color: #000;
+    text-decoration: none;
+}
+table.calendarioMes td a:hover {
+	font-size: 13pt;
+}
+table.calendarioMes td.feriado a {
+    color: #f00;
+    text-decoration: none;
+}
+table.calendarioMes td.inactivo {
+    background-color: #eee;
+	color: #aaa;
+}
+.tituloMes {
+    text-align: center;
+	font-size: 14pt;
+    padding: 5px;
+}
+.calendarioBarraNavegacion {
+    font-size: 9pt;
+    text-align: center;
+    padding: 5px;
+}
+.calendarioBarraNavegacion .inactivo {
+	color: #aaa;
+}
+.calendarioBarraNavegacion  a {
+    text-decoration: none;
+}
+.calendarioBarraNavegacion  a:hover {
+    text-decoration: underline;
+}
+table.calendarioDia {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    border-right: 1px solid #aaa;
+}
+table.calendarioDia th {
+    background-color: #eef;
+    padding: 2pt;
+    border: 1px solid #ccd;
+}
+table.calendarioDia td.actual {
+    background-color: #ff0;
+}
+table.calendarioDia th.feriado {
+    color: #f00;
+}
+table.calendarioDia td {
+    background-color: #fff;
+    padding: 2pt;
+    border-left: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width: 250px;
+    height: 250px;
+    text-align: left;
+    vertical-align: top;
+}
+table.calendarioDia td.normal {
+    color: #000;
+    text-decoration: none;
+}
+table.calendarioDia td.feriado {
+    color: #f00;
+    text-decoration: none;
+}
+.tituloDia {
+    text-align: center;
+	font-size: 14pt;
+    padding: 5px;
+}
+.leyenda .inactivo {
+	background-color: #eee;
+	border: 1px solid #aaa;
+}
+.leyenda .actual {
+    background-color: #fff;
+	color: #aaa;
+	border: 3px solid #abf;
+}
+.leyenda .activo {
+	background-color: #fff;
+	border: 1px solid #aaa;
+}
+.leyenda .feriado {
+	background-color: #fff;
+	border: 1px solid #aaa;
+    color: #f00;
+    text-decoration: none;
+}

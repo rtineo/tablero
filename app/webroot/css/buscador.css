@@ -1,0 +1,13 @@
+ .cargador{display:none;}
+ .tablaLoader { position:relative; }
+ .tablaLoader tr td{ background-color: #AAA; opacity:0.3}
+ .tablaLoader .cargador{ display:block; position:absolute; top:0; width:420px; height:150px; background:url(../img/ajax-loader.gif) center 30px no-repeat}
+ h3.titulotable{
+	background-color:#009EBA;
+	color:#FFFFFF;
+	display:block;
+	font-weight:bold;
+	margin-right:0.4em;
+	padding:0.3em 0.5em;
+}
+tfoot td{border:none;}

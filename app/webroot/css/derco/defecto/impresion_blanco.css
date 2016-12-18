@@ -1,0 +1,180 @@
+/* ESTILOS PARA IMPRESIONES */
+
+.bodyImpresion {
+	background: #ffffff;
+}
+
+.frameImpresion {
+    width: 17.1cm; 
+    height: 23.1cm; 
+    background-color: #ffffff; 
+    padding: 0cm;
+    margin: 0cm;
+    border: none;
+}
+
+.texto {
+    text-align: left;
+}
+
+.numero {
+    text-align: right;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.centro {
+    text-align: center;
+}
+
+.titulo {
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12pt;
+}
+
+.dato {
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: left;
+    text-transform: uppercase;
+}
+
+td {
+	/*font-size: 10pt;*/
+	font-size: 8pt;
+}
+
+td.etiqueta {
+	/*font-size: 10pt;*/
+	font-weight: bold;
+	padding-right: 10px;
+    text-align: right;
+    /*text-transform: uppercase;*/
+    width: 4cm;
+}
+th {
+	/*font-size: 11pt;*/
+	/*text-transform: uppercase;*/
+}
+
+#hoja {
+    width: 16cm;
+    color: #000000;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+    margin: 0cm;
+    padding: 0.5cm;
+    text-align: left;
+}
+
+#cabecera {
+    font-weight: bold;
+}
+
+#cabecera .izquierda, #cabecera .derecha {
+    vertical-align: top;
+}
+
+#cuerpo h1 {
+    font-size: 14pt;
+    text-align: center;
+}
+
+#cuerpo .subtitulo {
+    border-top: 1px #000000 solid;
+	font-weight: bold;
+}
+
+#cuerpo .linea {
+    border-bottom: 1px #000000 solid;
+}
+
+#cuerpo .espacio {
+    height: 10pt;
+}
+
+table.tablaParametros {
+    font-style: italic;
+    font-size: 10pt;
+}
+
+table.tablaDetalle {
+    font-style: normal;
+    font-size: 8pt;
+    border: 1px black;
+    border-style: solid none solid none;
+}
+
+table.tablaDetalle tr {
+    border: 1px #ccc;
+    border-style: none none solid none;
+}
+
+table.tablaDetalle th {
+    text-align: center;
+}
+
+table.tablaDetalle th.derecha {
+    text-align: right;
+}
+
+.logo {
+	text-align: right;
+}
+
+.superiorDerecha {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.pie {
+	text-align:center;
+}
+
+.nota {
+	font-size: 10pt;
+	font-style: italic;
+}
+
+#tablaDetalle .total,
+.tablaDetalle .total {
+    text-align: right;    
+    font-size: 9pt;
+    color: red;
+	font-weight: bold;
+}
+
+#tablaDetalle .etiqueta_total,
+.tablaDetalle .etiqueta_total {
+    text-align: left;    
+    font-size: 9pt;
+    color: black;
+	font-weight: bold;
+}
+
+#tablaDetalle .subtotal,
+.tablaDetalle .subtotal {
+    text-align: right;
+    font-size: 9pt;
+    color: black;
+	font-weight: bold;
+}
+
+.firma {
+    text-align: center;
+}
+
+.firma .nombre {
+    font-size: 10pt;
+}
+
+.firma .datos {
+    font-size: 8pt;
+}

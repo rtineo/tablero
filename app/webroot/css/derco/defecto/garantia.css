@@ -1,0 +1,36 @@
+.etiquetamsg {
+    font-weight:normal;
+    text-align: right;
+    padding: 0px 10px 0px 0px;
+	vertical-align: top;
+	font-size: 7.5pt;
+	color:red;
+}
+label.error {
+    color: red;
+	font-size: 7pt;
+    text-align: left;
+}
+
+#listaobservacion,
+.listaobservacion,
+#listaobservacion {
+    font-size: 8pt;
+	border-right:1px solid #dde;
+
+}
+
+#listaobservacion td,
+.listaobservacion td,
+#listaobservacion td {
+	vertical-align:middle;
+	border-bottom: 1px solid #dde;
+	border-left:1px solid #dde;
+}
+#listaobservacion th,
+.listaobservacion th,
+#listaobservacion th {
+	vertical-align:middle;
+	border-bottom: 1px solid #dde;
+	border-left:1px solid #dde;
+}

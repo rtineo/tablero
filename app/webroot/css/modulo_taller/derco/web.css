@@ -1,0 +1,735 @@
+body {
+	background-color: #F0F0F0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+	margin: 0px;
+}
+
+#container {
+	margin: 5px;
+}
+
+/*
+#header {
+	text-align: left;
+}
+
+#content {
+	float: right;
+	text-align: left;
+	width: 785px;
+}
+
+#footer {
+	clear: both;
+	color: #0088DD;
+	text-align: left;
+	width: 1002px;
+}
+
+#menu {
+	float: left;
+	height: 450px;
+	width: 200px;
+}
+*/
+
+.menuItems a:link, 
+.menuItem a:link, 
+span.botonSalirWeb a:link {
+	text-decoration : none;
+	color : #FFFFFF
+}
+
+table.web a:visited, 
+span.botonSalirWeb a:visited, 
+table a:visited {
+	text-decoration : none;
+	color : #FFFFFF
+}
+
+table.web a:hover, 
+span.botonSalirWeb a:hover, 
+table a:hover {
+	text-decoration : underline;
+	color : #DDDD00;
+}
+
+table.web a:active, 
+span.botonSalirWeb a:active, 
+table a:active {
+	text-decoration : none;
+	color : #FFFFFF
+}
+
+td.accion {
+	text-align: center;
+}
+
+table.web {
+	width: 983px;
+}
+table.web td {
+    vertical-align: top;
+}
+table.web td.menuSuperiorImagen {
+    height: 160px;
+	width:1024px;
+}
+
+table.miFooter td.imgFooter {
+    height: 80px;
+}
+
+#botonSalirWeb {
+    float: right;
+    font-size: 8pt;
+    margin: 10px 10px 0px 0px;
+}
+
+.pie {
+	background-color: #4A4A4A;
+	border-top: 2px solid #FFFFFF;
+	height: 35px;
+	font-size: 7pt;
+	text-align: center;
+}
+
+.pie_mid {
+	/*float: right;*/
+	color: #FFFF0F;
+    float: left;
+    height: 30px;
+    margin-left: 180px;
+    overflow: hidden;
+    width: 380px;
+    z-index: -1;
+	padding-top:3px;
+	font-size: 8pt;
+
+}
+
+.pie_izq {
+	float: left;
+	color: #FFFFFF;
+	padding-left: 2px;
+	padding-top: 10px;
+}
+.pie_der {
+	float: right;
+	color: #FFFFFF;
+	padding-right: 2px;
+	padding-top: 10px;
+}
+
+.menuSuperior {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #fff;
+    position: absolute;
+    top:80px;
+    left:500px;
+}
+
+/*
+ * Web
+ */
+
+table.web td.menuBar, 
+.menuBar {
+	background-color: #6B6B6B;
+	height: 450px;
+	width: 200px;
+}
+
+table.web td.contenido {
+	width: 820px;
+}
+
+table.web table.menuItems, 
+.menuItems {
+	width: 200px;
+}
+
+table.web table.menuItems td, 
+.menuItems td {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 10px;
+}
+table.web td.menuItem, 
+td.menuItem {
+    height: 14pt;
+    vertical-align: middle;
+}
+table.web table.menuItems td.titulo, td.titulo {
+    color: #fff;
+    background-color: #4A4A4A;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    border-top: 2px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-right: 5px;
+}
+table.web table.menuItems td.marcador {
+    width: 10px;
+    font-size: 8px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+table.web .contenido td {
+    font-size: 10px;
+    padding: 2px 0px 0px 2px;
+}
+table.web .botones {
+    text-align: right;
+}
+
+div.borde_detalle {
+	margin-left: 3px;
+}
+
+fieldset {
+	margin-left: 3px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+/*
+ * Menu Web
+ */
+.menuItems .titulo a:hover {
+	color: white;
+	text-decoration: none;
+}
+.modeloItem, .modeloItemElegido  {
+	background-color: #6B6B6B;
+	cursor: pointer;
+}
+
+.modeloItem:hover {
+	background-color: #BDBCBC;
+}
+
+.modeloItem:hover .menuItem a {
+	color: black;
+	padding-right: 10px;
+}
+
+.modeloItem .menuItem a:hover, 
+.modeloItemElegido .menuItem a:hover {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modeloItem .marcador {
+	color: white;
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+.menuWeb {
+	/*
+	background-color:#6B6B6B;
+	border-bottom:0px solid #FFFFFF;
+	border-top:2px solid #FFFFFF;
+	height:448px;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	width:200px;
+	*/
+}
+
+.menuWeb .subMenu {
+	/*
+	background-color:#6B6B6B;
+	border-bottom:2px solid #FFFFFF;
+	*/
+}
+
+.subMenu .tituloMenu {
+	/*
+	background-color:#4A4A4A;
+	border-bottom:1px solid #FFFFFF;
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px 29px 5px 0px;
+	text-align:right;
+	*/
+}
+
+.subMenu .listaOpciones {
+	/*
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	*/
+}
+
+.listaOpciones .opcion {
+	/*
+	font-size:10px;
+	font-weight:bold;
+	padding-right:5px;
+	text-align:right;
+	*/
+}
+
+/*
+ * Paginador
+ */
+#pagination {
+	font-size: 8pt;
+}
+
+#pagination a {
+	color: #000;
+}
+
+#pagination a:hover {
+	color: #DDDD00;
+}
+
+/*
+ * Formularios
+ */
+
+#formularioEdicion,
+.formularioEdicion{
+    font-size: 8pt;
+}
+
+#formularioEdicion th,
+.formularioEdicion th, 
+.columnaCabecera {
+	background-color: #AABBEE;
+	border-bottom: 1px solid #8899CC;
+	border-left: 1px solid #EEEEFF;
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 1px;
+	text-align: center;
+}
+
+#formularioEdicion th.columnaSubCabecera,
+.formularioEdicion th.columnaSubCabecera {	
+	color:#777777;	 
+    background-color: #EFEFEF;
+	border-left: 1px #eef solid;
+}
+
+#formularioEdicion td,
+.formularioEdicion td {
+    font-size: 10px;
+    padding-top: 2px;
+	vertical-align: top;
+}
+#formularioEdicion td .tituloSeccion,
+.formularioEdicion td .tituloSeccion,
+.tituloSeccion {
+	background-color: #2977C1;
+	border-left: 1px solid #EEEEFF;
+	color: #FFFFFF;
+	display: block;
+	font-size: 8pt;
+	padding: 2px 0 2px 10px;
+	text-align: left;
+	margin-left: 2px;
+	width: 770px;
+}
+
+#formularioEdicion td.cabecera,
+.formularioEdicion td.cabecera, 
+.cabecera {
+	font-size:10px;
+	padding:2px 0 0 2px;	
+    text-align: left;
+	background-color:#2977C1;
+	padding-bottom:1px;
+	border-bottom: 1px #16b solid;
+	color:#fff;
+}
+
+#formularioEdicion td.columnaCabecera,
+.formularioEdicion td.columnaCabecera{	
+	color:#fff;	 
+    background-color: #2977C1;
+	border-left: 1px #eef solid;
+    text-align: left;
+    padding: 0px 0px 3px 5px;
+}
+
+#formularioEdicion .titulo,
+.formularioEdicion .titulo{
+    background-color: #2977C1;
+    font-size: 10pt;
+    color: white;
+}
+
+#formularioEdicion td.etiqueta,
+.formularioEdicion td.etiqueta{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+	vertical-align: top;
+    padding: 0px 5px 0px 10px;
+}
+
+#formularioEdicion .numero,
+.formularioEdicion .numero {
+    text-align: right;
+}
+
+#formularioEdicion .texto,
+.formularioEdicion .texto {
+    text-align: left;
+    vertical-align: top;
+}
+
+#formularioEdicion .centrado,
+.formularioEdicion .centrado {
+    text-align: center;
+}
+
+#formularioEdicion .total,
+.formularioEdicion .total {
+    text-align: right;    
+    color: red;
+	font-weight: bold;
+}
+
+#formularioEdicion .total_izquierda,
+.formularioEdicion .total_izquierda {
+    text-align: left;    
+    color: red;
+	font-weight: bold;
+}
+
+#formularioEdicion .etiqueta_total,
+.formularioEdicion .etiqueta_total {
+    text-align: left;    
+    color: black;
+	font-weight: bold;
+}
+
+#formularioEdicion .etiqueta_total_derecha,
+.formularioEdicion .etiqueta_total_derecha {
+    text-align: right;    
+    color: black;
+	font-weight: bold;
+}
+
+#formularioEdicion .subtotal,
+.formularioEdicion .subtotal {
+    text-align: right;
+    color: black;
+	font-weight: bold;
+}
+
+#formularioEdicion .valor,
+.formularioEdicion .valor{
+    text-align: left;
+}
+
+#formularioEdicion .valor input,
+.formularioEdicion .valor input{
+    font-size: 8pt;
+}
+
+#formularioEdicion .valor select,
+.formularioEdicion .valor select{
+    font-size: 8pt;
+}
+
+#formularioEdicion .errorValidacion,
+.formularioEdicion .errorValidacion{
+    color: red;
+    font-size: 8pt;
+}
+
+#formularioEdicion .accion,
+.formularioEdicion .accion{
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+#formularioEdicion textarea,
+.formularioEdicion textarea{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+.errorValidacion {
+    color: red;
+    font-size: 8pt;
+}
+.errorValidacionJs {
+    color: red;
+    font-size: 8pt;
+	display: none;
+}
+.campoObligatorio {
+	color: red;
+}
+.form_error {
+    background-color: #ffe;
+}
+
+.lista dt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	float: right;	
+	font-weight: bold;
+	margin: 0;
+	padding: 0px 0px 0px 5px;
+}
+.lista dl {
+	padding: 0px 0px 0px 5px;
+}
+.lista dd {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-weight: bold;
+	padding: 5px 0px 0px 0px;
+}
+
+.lista .par {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background: #4A4A4A;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding:8px;
+}
+
+.lista .impar {
+	background: #6B6B6B;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+	color: #FFFFFF;
+}
+
+.filaResaltada {
+    background-color: #fea;
+}
+
+#listaPrincipal tr.par,
+.listaPrincipal tr.par, 
+.par {
+    background-color: #eef;
+}
+
+#listaPrincipal tr.par:hover,
+.listaPrincipal tr.par:hover, 
+.par:hover {
+    background-color: #fea;
+}
+
+#listaPrincipal tr.impar,
+.listaPrincipal tr.impar, 
+.impar {
+    background-color: #fff;
+}
+
+#listaPrincipal tr.impar:hover,
+.listaPrincipal tr.impar:hover, 
+.impar:hover {
+    background-color: #fea;
+}
+
+.tituloSeccionAdmin {
+    font-size: 12px;
+	color:#fff;	 
+    background-color: #0C3374;
+	border-left: 1px #eef solid;
+    text-align: left;
+    padding: 0px 0px 3px 5px;
+    font-weight:bold;
+}
+.cuerpoImagen {
+	background-color: transparent;
+	padding: 2px 0 0 3px;
+}
+/*
+.cuerpoImagen {
+    font-size: 12px;
+	color:#FFFFFF;	 
+    background-color: #FFFFFF;
+	border-left: 1px #FFFFFF solid;
+    text-align: left;
+    padding: 2px 0 0 2px;
+    width:99%;
+    height:220px;
+}
+*/
+/**
+ * Login - Cliente
+ **/
+#passwordTable {
+	/*background-color: #99BBFF;*/
+	background-color: #E5EDFE;
+    float: left;
+	width:170px;
+    filter: alpha(opacity=70);
+    -moz-opacity: .70;
+    opacity: .70;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin:10px 10px 10px 15px;
+    /*border-top: 1px solid #ccd;
+    border-bottom: 1px solid #ccd;
+    border-left: 1px solid #ccd;
+    border-right: 1px solid #ccd;*/
+}
+
+#passwordTable .inicio_sesion {
+	text-align: center;
+    font-size: 12pt;
+ 	font-weight: bold;
+    font-family: Helvetica;
+    /*padding: 0px 10px 15px 0px;*/
+}
+
+#passwordTable .etiquetaLogin{
+    font-size: 8pt;
+	text-align: right;
+ 	font-weight: bold;
+}
+
+#passwordTable .etiquetaLoginmensaje{
+    font-size:6pt;
+	text-align: left;
+	color:#d57671;
+ 	font-weight: bold;
+}
+
+#passwordTable .etiquetaLoginnew{
+    font-size: 8pt;
+	text-align: left;
+ 	font-weight: bold;
+}
+
+#passwordTable .valorLogin{
+	text-align: left;
+    padding: 0px 0px 0px 0px;
+	
+}
+
+#passwordTable .button {
+ 	font-weight: bold;
+    text-decoration: none;
+    font-size: 9pt;
+}
+
+#camposLogin {
+    /*padding: 5px 5px 6px 9px;*/
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:9px;
+	padding-right:5px;
+}
+
+#loginTabla2 {
+	text-align: center;
+	width: 100%;
+    padding: 1px;
+    /*border-top: 1px solid #ccd;
+    border-bottom: 1px solid #ccd;
+    border-left: 1px solid #ccd;
+    border-right: 1px solid #ccd;*/
+}
+
+#loginTabla2 .td,
+#loginTabla2 .accion {
+    text-align: center;
+}
+
+#loginTabla2 .accion .enlace {
+    font-size: 8pt;
+    padding: 10px 0px 0px 2px;
+}
+
+#loginTabla2 .accion .enlace a {
+    text-decoration: none;
+}
+
+#loginTabla2 .accion .enlace a:hover {
+    color: red;
+}
+
+#loginTabla2 .errorValidacion {
+    color: red;
+    font-size: 9pt;
+}
+
+.guardar {
+    width: 100px;
+    height: 25px;
+	background-image: url(/security/img/security/defecto/guardar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+.cancelar {
+    width: 100px;
+    height: 25px;
+	background-image: url(/security/img/security/defecto/cancelar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+/* SIMULADOR FINANCIERO */
+#simuladorFinancieroResultado td {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+}
+
+#simuladorFinancieroResultado td.etiqueta {
+	font-weight: bold;
+	text-align: right;
+}
+
+#simuladorFinancieroResultado td.total {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #f00;
+}
+
+/***************/
+/* CLASES CAKE */
+/***************/
+
+#header h1 {
+    font-size: 12pt;
+    color: #abe;
+}
+
+#content h2 {
+    font-size: 14pt;
+    color: #fff;
+    background-color: #9bf;
+    border-bottom: 1px solid #68c;
+    padding: 2px 0px 0px 10px;
+    margin: 0px;
+}
+
+#flashMessage {
+    font-size: 9pt;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    background-color: #ffa;
+    color: #555;
+}

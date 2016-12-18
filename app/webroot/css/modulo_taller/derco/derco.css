@@ -1,0 +1,1636 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    margin: 0px;
+}
+
+form {
+	margin: 0px;
+}
+
+fieldset {
+	padding: 5px;
+	margin: 5px;
+}
+
+fieldset legend {
+	font-weight: bold;
+}
+
+.hide{
+	display:none;
+}
+.aceptar {
+    width: 100px;
+    height: 25px;
+	background-image: url(../../../img/security/defecto/aceptar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+.guardar {
+    width: 100px;
+    height: 25px;
+	background-image: url(../../../img/security/defecto/guardar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+.buscar {
+    width: 100px;
+    height: 25px;
+	background-image: url(../../../img/security/defecto/buscar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+.cerrar {
+    width: 100px;
+    height: 25px;
+	background-image: url(../../../img/security/defecto/cerrar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+.cancelar {
+    width: 100px;
+    height: 25px;
+	background-image: url(../../../img/security/defecto/cancelar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+.cancelarAtencion {
+    width: 130px;
+    height: 25px;
+	background-image: url(../../../img/security/defecto/cancelar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+.imprimir {
+    width: 100px;
+    height: 25px;
+	background-image: url(../../../img/security/defecto/imprimir.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+.generarCotizacion {
+	width: 155px;
+    height: 25px;
+	background-image: url(../../../img/security/defecto/guardar.png);
+    background-repeat: no-repeat;
+    background-position: 2px 1px;
+    padding: 0px;
+}
+
+.accion {
+    text-align: center;
+}
+
+td.numero, input.numero {
+	text-align: right;
+}
+
+.centrado {
+	text-align: center;
+}
+
+ul.acciones {
+    list-style-type: none;
+    background-color: #fafafa;
+    padding: 5px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 8pt;
+    margin: 0px;
+}
+
+div.acciones {
+	font-size: 8pt;
+}
+
+ul.acciones li {
+    padding-left: 5px;
+}
+
+ul.acciones a, div.acciones a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul.acciones a:hover, div.acciones a:hover {
+    color: #f80;
+}
+
+input.soloLectura {
+    background-color: #EEE;
+}
+
+.errorValidacion {
+    color: red;
+    font-size: 8pt;
+}
+
+.errorValidacionJs {
+    color: red;
+    font-size: 8pt;
+	display: none;
+}
+
+.desplegableCabecera {
+	text-align: left;
+	background-color: #abe; 
+	color: #fff; 
+	border-top: 1px solid #bcf;
+	border-bottom: 1px solid #9ad;
+	padding-left: 1em;
+}
+
+.desplegableCabecera:hover{
+	background-color: #abf; 
+	border-bottom: 1px solid #9ae;
+}
+
+.enPromocion {
+	color: #00f;
+}
+
+.instrucciones {
+	font-size: 8pt;
+}
+/* cabecera */
+.loginFecha {
+	font-size: 8pt;
+	font-weight: normal;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+
+.cabeceraFechaComun {
+	font-size: 8pt;
+	font-weight: normal;
+	position: absolute;
+	top: 35px;
+	right: 10px;
+}
+
+#cabecera {
+    height: 65px;
+}
+
+.cabeceraFecha {
+	font-size: 14pt;
+	font-weight: bold;
+	position: absolute;
+	top: 2px;
+	right: 10px;
+}
+
+#mensajeRefrescar {
+	color: #abe;
+	border: 1px solid #abc;
+	width: 300px;
+	position: absolute;
+	top: 40px;
+	left: 200px;
+	padding: 1px;
+}
+
+/*
+ * Formularios
+ */
+#formularioEdicion,
+.formularioEdicion{
+    font-size: 8pt;
+}
+
+#formularioEdicion th,
+.formularioEdicion th, 
+.columnaCabecera {
+	background-color: #AABBEE;
+	border-bottom: 1px solid #8899CC;
+	border-left: 1px solid #EEEEFF;
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 1px;
+	text-align: center;
+}
+
+#formularioEdicion th.columnaSubCabecera,
+.formularioEdicion th.columnaSubCabecera {	
+	color:#777777;	 
+    background-color: #EFEFEF;
+	border-left: 1px #eef solid;
+}
+
+#formularioEdicion td,
+.formularioEdicion td {
+    font-size: 10px;
+    padding-top: 2px;
+	vertical-align: top;
+}
+#formularioEdicion td .tituloSeccion,
+.formularioEdicion td .tituloSeccion,
+.tituloSeccion {
+	background-color: #2977C1;
+	border-left: 1px solid #EEEEFF;
+	color: #FFFFFF;
+	display: block;
+	font-size: 8pt;
+	padding: 2px 0 2px 10px;
+	text-align: left;
+	margin-left: 2px;
+	width:100%;
+}
+
+#formularioEdicion td.cabecera,
+.formularioEdicion td.cabecera, 
+.cabecera {
+	font-size:10px;
+	padding:2px 0 0 2px;	
+    text-align: left;
+	background-color:#2977C1;
+	padding-bottom:1px;
+	border-bottom: 1px #16b solid;
+	color:#fff;
+}
+
+#formularioEdicion td.columnaCabecera,
+.formularioEdicion td.columnaCabecera{	
+	color:#fff;	 
+    background-color: #2977C1;
+	border-left: 1px #eef solid;
+    text-align: left;
+    padding: 0px 0px 3px 5px;
+}
+
+#formularioEdicion .titulo,
+.formularioEdicion .titulo{
+    background-color: #2977C1;
+    font-size: 10pt;
+    color: white;
+}
+
+#formularioEdicion td.etiqueta,
+.formularioEdicion td.etiqueta{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+	vertical-align: top;
+    padding: 0px 5px 0px 10px;
+}
+
+#formularioEdicion .numero,
+.formularioEdicion .numero {
+    text-align: right;
+}
+
+#formularioEdicion .texto,
+.formularioEdicion .texto {
+    text-align: left;
+    vertical-align: top;
+}
+
+#formularioEdicion .centrado,
+.formularioEdicion .centrado {
+    text-align: center;
+}
+
+#formularioEdicion .total,
+.formularioEdicion .total {
+    text-align: right;    
+    color: red;
+	font-weight: bold;
+}
+
+#formularioEdicion .total_izquierda,
+.formularioEdicion .total_izquierda {
+    text-align: left;    
+    color: red;
+	font-weight: bold;
+}
+
+#formularioEdicion .etiqueta_total,
+.formularioEdicion .etiqueta_total {
+    text-align: left;    
+    color: black;
+	font-weight: bold;
+}
+
+#formularioEdicion .etiqueta_total_derecha,
+.formularioEdicion .etiqueta_total_derecha {
+    text-align: right;    
+    color: black;
+	font-weight: bold;
+}
+
+#formularioEdicion .subtotal,
+.formularioEdicion .subtotal {
+    text-align: right;
+    color: black;
+	font-weight: bold;
+}
+
+#formularioEdicion .valor,
+.formularioEdicion .valor{
+    text-align: left;
+}
+
+#formularioEdicion .valor input,
+.formularioEdicion .valor input{
+    font-size: 8pt;
+}
+
+#formularioEdicion .valor select,
+.formularioEdicion .valor select{
+    font-size: 8pt;
+}
+
+#formularioEdicion .errorValidacion,
+.formularioEdicion .errorValidacion{
+    color: red;
+    font-size: 8pt;
+}
+
+#formularioEdicion .accion,
+.formularioEdicion .accion{
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+#formularioEdicion textarea,
+.formularioEdicion textarea{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+.toggle {
+	cursor: n-resize;
+}
+
+.tip {
+	color: red;
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+/* botonSalir
+ * Para el botÃ³n de logout
+ */
+#botonSalir, 
+#botonSalirWeb {
+    float: right;
+    font-size: 8pt;
+    margin: 10px 10px 0px 0px;
+}
+
+#botonSalir a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#botonSalir a:hover {
+    color: #f00;
+}
+
+#botonSalirWeb  a {
+	text-decoration: none;
+    color: #000;
+}
+
+#botonSalirWeb  a:hover {
+    color: #ff6600;
+}
+
+#datosLoginCliente {
+	/*background-color: #AABBCC;*/
+}
+
+/* botonPrototipo
+ * Para el botÃ³n de logout
+ */
+#botonPrototipo {
+    float: right;
+    font-size: 8pt;
+    margin: 10px 10px 0px 0px;
+}
+
+#botonPrototipo a {
+    text-decoration: none;
+    color: #000;
+}
+
+#botonPrototipo a:hover {
+    color: #f00;
+}
+
+/* loginDatos
+ * Para la caja de los datos de logueo
+ */
+#loginDatos {
+    clear: both;
+    font-size: 8pt;
+    color: #fff;
+    padding: 50px 10px 0px 0px;
+    text-align: right;
+}
+
+/* loginTabla
+ * Para el formulario de login
+ */
+#loginTabla {
+     background-color: #eef;
+     padding: 10px;
+     border-bottom: 1px solid #ccd;
+}
+
+#loginTabla .accion {
+    text-align: center;
+}
+
+#loginTabla .accion .enlace {
+    font-size: 8pt;
+    padding: 10px 0px 0px 2px;
+}
+
+#loginTabla .accion .enlace a {
+    text-decoration: none;
+}
+
+#loginTabla .accion .enlace a:hover {
+    color: red;
+}
+
+#loginTabla .errorValidacion {
+    color: red;
+    font-size: 8pt;
+}
+
+/* listaMonitor */
+
+#listaMonitor {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;	
+}
+
+#listaMonitor th {
+    padding: 1px;
+    background-color: #abe;
+    border-left: 1px solid #eef ;
+    border-bottom: 1px solid #89c ;
+}
+
+#listaMonitor td {
+    padding: 0px 2px 0px 2px;
+	vertical-align: top;
+}
+
+#listaMonitor .listaAlarmas {
+	list-style: disc;
+	margin: 0;
+	padding-left: 15px;
+}
+
+/* listaPrincipal
+ * Para las listas que muestran los registros
+ */
+
+.par {
+    background-color: #eef;
+}
+
+.par:hover {
+    background-color: #fea;
+}
+
+.impar {
+    background-color: #fff;
+}
+
+.impar:hover {
+    background-color: #fea;
+}
+
+.cabeceraDatos {
+	color:#FFFFFF;	 
+    background-color: #AABBDD;
+	font-weight: bold;
+}
+
+.filaResaltada {
+    background-color: #fea;
+}
+.filaResaltadaGarantia {
+	background-color:#eaeaea;
+}
+
+.filaSeleccionada {
+    background-color: yellow;
+}
+.azulclaro {
+    background-color:#8ae;
+}
+.amarillo {
+    background-color:#ffffa8;
+}
+.rojoclaro {
+    background-color:#ff8080;
+}
+.verdeclaro {
+    background-color:#bfffcf;
+}
+
+#listaPrincipal,
+.listaPrincipal,
+#listaPrincipal2 {
+    width: 100%;
+    font-size: 8pt;
+}
+
+#listaPrincipalGarantia,
+.listaPrincipalGarantia,
+#listaPrincipalGarantia2 {
+    width: 100%;
+    font-size: 7.5pt;
+}
+
+#listaPrincipalGarantia td,
+.listaPrincipalGarantia td,
+#listaPrincipalGarantia2 td {
+	vertical-align:middle;
+	border-bottom: 1px solid #dde;
+	border-left:1px solid #dde;
+}
+
+#listaPrincipal th,
+.listaPrincipal th {
+    font-size: 8pt;
+    padding: 1px;
+    background-color: #e53a28;
+    border-left: 1px solid #eef ;
+    border-bottom: 1px solid #89c ;
+}
+
+
+#listaPrincipal th.columnaSubCabecera,
+.listaPrincipal th.columnaSubCabecera { 
+	color:#000;	 
+    background-color: #abe;
+	border-left: 1px #9ad solid;
+}
+
+#listaPrincipal th a {
+	text-decoration: none;
+}
+
+#listaPrincipal td,
+.listaPrincipal td {
+    font-size: 8pt;
+    padding: 1px 5px 0px 5px;
+    border-right: 1px solid #dde;
+	vertical-align: top;
+}
+
+#listaPrincipal2 td  {
+    font-size: 8pt;
+    padding: 1px 5px 0px 5px;
+	vertical-align: top;
+}
+
+#listaPrincipal .numero,
+.listaPrincipal .numero {
+    text-align: right;
+}
+
+#listaPrincipal .texto,
+.listaPrincipal .texto {
+    text-align: left;
+    vertical-align: top;
+}
+
+#listaPrincipal .centrado,
+.listaPrincipal .centrado {
+    text-align: center;
+}
+
+#listaPrincipal tr.par,
+.listaPrincipal tr.par {
+    background-color: #eef;
+}
+
+#listaPrincipal tr.par:hover,
+.listaPrincipal tr.par:hover {
+    background-color: #fea;
+}
+
+
+#listaPrincipal tr.impar,
+.listaPrincipal tr.impar {
+    background-color: #fff;
+}
+
+#listaPrincipal tr.impar:hover,
+.listaPrincipal tr.impar:hover {
+    background-color: #fea;
+}
+
+#listaPrincipal td.accion,
+.listaPrincipal td.accion {
+    font-size: 8pt;
+    text-align: center;
+}
+
+#listaPrincipal td.accion a,
+.listaPrincipal td.accion a {
+    color: #000;
+    text-decoration: none;
+}
+
+#listaPrincipal td.accion a:hover,
+.listaPrincipal td.accion a:hover {
+    color: #f80;
+}
+
+.datosHead {
+	font-size: 10pt;
+}
+
+.datosOt {
+    border-bottom: 1px solid #dde;
+    border-left: 1px solid #dde;
+	background-color: #A9D0F5;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+}
+
+.datosPedido {
+    border-bottom: 1px solid #dde;
+    border-left: 1px solid #dde;
+	background-color: #A9D0F5;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+}
+
+.datosImportacion {
+    border-bottom: 1px solid #dde;
+    border-left: 1px solid #dde;
+	background-color: #01DF01;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+}
+
+.datosTallerServicios {
+    border-bottom: 1px solid #dde;
+    border-left: 1px solid #dde;
+	background-color: #FE2EF7;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+}
+
+.datosContacto {
+    border-bottom: 1px solid #dde;
+    border-left: 1px solid #dde;
+	background-color: #BE81F7;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+}
+
+.datosObtenidos {
+    border-bottom: 1px solid #dde;
+    border-left: 1px solid #dde;
+	background-color: #FE2E9A;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+}
+
+.cabeceraGarantia {
+    border-bottom: 1px solid #dde;
+    border-left: 1px solid #dde;
+	background-color:#004080;
+    font-size: 7.5pt;
+    font-weight: bold;
+	color:#FFFFFF;
+    padding: 1px;
+    text-align: center;
+}
+
+#buscadorBasico {
+    /*width: 100%;*/
+    background-color: #eef;
+    padding: 5px;
+    font-size: 8pt;
+    border: 1px none #ccd ;
+    border-bottom-style: solid;
+}
+
+/*
+ * Lista Secundaria
+ */
+
+#listaSecundaria,
+.listaSecundaria,
+#listaSecundaria2 {
+    width: 100%;
+}
+
+#listaSecundaria th,
+.listaSecundaria th {
+    font-size: 8pt;
+    padding: 1px;
+    background-color: #eba;
+    border-left: 1px solid #eef ;
+    border-bottom: 1px solid #ffb ;
+}
+
+#listaSecundaria th.columnaSubCabecera,
+.listaSecundaria th.columnaSubCabecera { 
+	color:#777777;	 
+    background-color: #EFEFEF;
+	border-left: 1px #eef solid;
+}
+
+#listaSecundaria th a {
+	text-decoration: none;
+}
+
+#listaSecundaria td,
+.listaSecundaria td {
+    font-size: 8pt;
+    padding: 1px 5px 0px 5px;
+    border-right: 1px solid #dde;
+	vertical-align: top;
+}
+
+#listaSecundaria2 td  {
+    font-size: 8pt;
+    padding: 1px 5px 0px 5px;
+	vertical-align: top;
+}
+
+#listaSecundaria .numero,
+.listaSecundaria .numero {
+    text-align: right;
+}
+
+#listaSecundaria .texto,
+.listaSecundaria .texto {
+    text-align: left;
+    vertical-align: top;
+}
+
+#listaSecundaria .centrado,
+.listaSecundaria .centrado {
+    text-align: center;
+}
+
+#listaSecundaria tr.par,
+.listaSecundaria tr.par {
+    background-color: #eef;
+}
+
+#listaSecundaria tr.par:hover,
+.listaSecundaria tr.par:hover {
+    background-color: #fea;
+}
+
+#listaSecundaria tr.impar,
+.listaSecundaria tr.impar {
+    background-color: #fff;
+}
+
+#listaSecundaria tr.impar:hover,
+.listaSecundaria tr.impar:hover {
+    background-color: #fea;
+}
+
+#listaSecundaria td.accion,
+.listaSecundaria td.accion {
+    font-size: 8pt;
+    text-align: center;
+}
+
+#listaSecundaria td.accion a,
+.listaSecundaria td.accion a {
+    color: #000;
+    text-decoration: none;
+}
+
+#listaSecundaria td.accion a:hover,
+.listaSecundaria td.accion a:hover {
+    color: #f80;
+}
+
+
+/*
+ *  Listado de Montos Totales
+ */
+
+#listaTotales tr.vacio,
+.listaTotales tr.vacio {
+    background-color: #eef;
+	border-color: #eef;
+}
+
+#listaTotales .total,
+.listaTotales .total, .total {
+    text-align: right;    
+    font-size: 8pt;
+    color: red;
+	font-weight: bold;
+	background-color:#fff;
+	border-bottom: 1px solid #abe;
+}
+
+#listaTotales .etiqueta_total,
+.listaTotales .etiqueta_total, .etiqueta_total {
+    text-align: left;    
+    font-size: 8pt;
+    color: black;
+	font-weight: bold;
+	background-color: #fff;
+	border-bottom: 1px solid #abe;
+}
+
+#listaTotales .subtotal,
+.listaTotales .subtotal {
+    text-align: right;
+    font-size: 8pt;
+    color: black;
+	background-color: #fff;
+	border-bottom: 1px solid #abe;
+}
+
+/* buscadorBasico
+ * Para el elemento buscador_basico
+ */
+
+#buscadorBasico .etiqueta {
+}
+
+#buscadorBasico select {
+    font-size: 8pt;
+}
+
+#buscadorBasico input {/* mejorar esto para poder separarlo por tipos */
+    font-size: 8pt;
+}
+
+/* menuProgramArbol
+ * Para el elemento menu_programa_arbol
+ */
+.menuProgramArbol {
+   	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+	font-weight: normal;
+    padding: 10px;
+    /*
+    background-color: #EEEEFF;
+    */
+}
+
+.menuProgramArbol .menu .cabecera {
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin: 0px;
+    height: 16px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.menuProgramArbol .menu .cabeceraApagada {
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 5px;
+    height: 16px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.menuProgramArbol ul {
+    list-style-type: none;
+}
+
+.menuProgramArbol li {
+    margin: 2px 0px 2px 0px;
+}
+
+.menuProgramArbol .menuSeleccionado {
+    background-color: #ffa;
+    padding: 0px 3px 0px 3px;
+}
+
+.menuProgramArbol .programaSeleccionado {
+    background-color: #ffa;
+    padding: 0px 3px 0px 3px;
+}
+
+.menuProgramArbol a {
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+.menuProgramArbol a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.menuProgramArbol span.menu {
+    padding: 0px 3px 0px 3px;
+}
+
+.menuProgramArbol span.programa {
+    padding: 1px;
+    margin: 1px;
+}
+
+.menuProgramArbol li.menu {
+    list-style: none;
+    /*list-style-image: url(/sismedic/img/folder.png);*/
+}
+
+.menuProgramArbol li.programa {
+    list-style: disc;
+    /*list-style-image: url(/sismedic/img/exec.png);*/
+}
+
+.menuProgramArbol .menuAcciones {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+}
+
+.menuProgramArbol .programaAcciones {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-left: 15px;
+}
+
+/* menuProgram
+ * Para el elemento menu_programa
+ */
+.menuProgram {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+	color: #294D94;
+	font-size: 10pt;
+}
+
+.menuProgram li {
+   margin: 0px;
+   padding-left: 10px;
+}
+
+.menuProgram li a {
+    color: #555;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 9pt;
+}
+
+.menuProgram a:hover {
+    color: red;
+}
+
+.menuProgram ul {
+    list-style-position: outside;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.menuProgram .menu {
+ 	font-weight: bold;
+	font-size: 9pt;
+}
+
+.menuProgram .menu .cabecera {
+    color: #000;
+    background-color: #fff;
+    /*
+	background-image: url(../../../img/cerrar_menu.png);
+    background-repeat: no-repeat;
+    padding: 2px 0px 0px 20px;
+    */
+    padding: 2px 0px 0px 2px;
+    border-bottom: 1px solid #ccc;
+    margin: 0px;
+    height: 16px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.menuProgram .menu .cabeceraApagada {
+    color: #888;
+    background-color: #fff;
+    /*
+	background-image: url(../../../img/abrir_menu.png);
+    background-repeat: no-repeat;
+    padding: 2px 0px 0px 20px;
+    */
+    padding: 2px 0px 0px 2px;
+    border-bottom: 1px solid #fff;
+    margin: 0px;
+    height: 16px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.etiqueta {
+    font-weight: bold;
+    text-align: right;
+    padding: 0px 10px 0px 0px;
+	vertical-align: top;
+	font-size: 8pt;
+}
+
+.valor {
+    text-align: left;
+	vertical-align: top;
+	/*border: 1px solid #dde;
+	background-color: #D5E3FE;*/
+	font-size: 8pt;
+}
+
+.div_textarea {
+	background-color: white;
+	border: 1px inset black;
+	color: black;
+	text-align: left;
+}
+
+.readonly {
+	color: #000;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+
+/* CALENDAR */
+/************/
+table.calendarioMes {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+table.calendarioMes th {
+    background-color: #abf;
+    padding: 2pt;
+    border-right: 1px solid #89d;
+    border-bottom: 1px solid #89d;
+}
+table.calendarioMes th.feriado {
+    color: #f00;
+}
+table.calendarioMes td {
+    background-color: #fff;
+    padding: 2pt;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width: 50px;
+    height: 50px;
+    text-align: left;
+    vertical-align: top;
+}
+table.calendarioMes td:hover {
+    background-color: #ffa;
+}
+table.calendarioMes td.actual {
+    background-color: #fff;
+	color: #aaa;
+	border: 3px solid #abf;
+}
+table.calendarioMes td a {
+	color: #aaa;
+    color: #000;
+    text-decoration: none;
+}
+table.calendarioMes td a:hover {
+	font-size: 18pt;
+}
+table.calendarioMes td.feriado a {
+    color: #f00;
+    text-decoration: none;
+}
+table.calendarioMes td.inactivo {
+    background-color: #eee;
+	color: #aaa;
+}
+.tituloMes {
+    text-align: center;
+	font-size: 14pt;
+    padding: 5px;
+}
+.calendarioBarraNavegacion {
+    font-size: 9pt;
+    text-align: center;
+    padding: 5px;
+}
+.calendarioBarraNavegacion .inactivo {
+	color: #aaa;
+}
+.calendarioBarraNavegacion  a {
+    text-decoration: none;
+}
+.calendarioBarraNavegacion  a:hover {
+    text-decoration: underline;
+}
+table.calendarioDia {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    border-right: 1px solid #aaa;
+}
+table.calendarioDia th {
+    background-color: #eef;
+    padding: 2pt;
+    border: 1px solid #ccd;
+}
+table.calendarioDia td.actual {
+    background-color: #ff0;
+}
+table.calendarioDia th.feriado {
+    color: #f00;
+}
+table.calendarioDia td {
+    background-color: #fff;
+    padding: 2pt;
+    border-left: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    width: 250px;
+    height: 250px;
+    text-align: left;
+    vertical-align: top;
+}
+table.calendarioDia td.normal {
+    color: #000;
+    text-decoration: none;
+}
+table.calendarioDia td.feriado {
+    color: #f00;
+    text-decoration: none;
+}
+table.buscador {
+    background-color: #eef;
+    padding: 5px;
+    font-size: 10pt;
+    border: 1px none #ccd ;
+    border-bottom-style: solid;
+}
+.tituloDia {
+    text-align: center;
+	font-size: 14pt;
+    padding: 5px;
+}
+.leyenda .inactivo {
+	background-color: #eee;
+	border: 1px solid #aaa;
+}
+.leyenda .actual {
+    background-color: #fff;
+	color: #aaa;
+	border: 3px solid #abf;
+}
+.leyenda .activo {
+	background-color: #fff;
+	border: 1px solid #aaa;
+}
+.leyenda .feriado {
+	background-color: #fff;
+	border: 1px solid #aaa;
+    color: #f00;
+    text-decoration: none;
+}
+
+/****************/
+/* MENSAJES WEB */
+/****************/
+
+.mensajeTitulo {
+	text-align: center;
+	font-size: 20pt;
+}
+
+.mensajeMarca {
+	text-align: left;
+}
+
+.mensajeModelo {
+	text-align: center;
+}
+
+/***************/
+/* CLASES CAKE */
+/***************/
+
+#header h1 {
+    font-size: 12pt;
+    color: #abe;
+}
+
+#content h2 {
+    font-size: 14pt;
+    color: #fff;
+    background-color: #9bf;
+    border-bottom: 1px solid #68c;
+    padding: 2px 0px 0px 10px;
+    margin: 0px;
+}
+
+#content h3 {
+    font-size: 14pt;
+    color: #fff;
+    background-color: #8ae;
+    border-bottom: 1px solid #68c;
+    padding: 2px 0px 0px 10px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#flashMessage, 
+.flashMessage {
+    font-size: 9pt;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    background-color: #ffa;
+    color: #555;
+}
+
+.form_error {
+    background-color: #ffe;
+}
+
+.etiqueta_chica{
+    font-size: 8pt;
+}
+
+.campoObligatorio {
+	color: red;
+}
+
+div.espacio {	
+	color: red;
+    font-size: 8pt;
+}
+/*
+ * Lightbox: Ver imagen
+ */
+.white_content {
+	background-color:white;
+	border:2px solid orange;
+	display:none;
+	overflow:auto;
+	padding:5px;
+	position:absolute;
+	text-align:left;
+	z-index:1002;
+}
+
+.boton_preview {
+	border: 0px none;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+/*
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.75;
+	opacity:.75;
+	filter: alpha(opacity=75);
+}
+
+.white_content {
+	text-align: center;
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 35%;
+	height: 45%;
+	padding: 5px;
+	border: 5px solid orange;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+*/
+
+#pagination {
+	color: #555;
+	font-size: 8pt;
+}
+
+#pagination a {
+	color: #00f;
+	text-decoration: none;
+}
+
+#pagination a:hover {
+	color: #f00;
+	text-decoration: none;
+}
+
+.blank_overlay {
+	background-color: transparent;
+	position: absolute;
+	display: none;
+}
+
+.sending_overlay {
+	background-image: url(../../../img/derco/defecto/grid-loading.gif);
+	position: absolute;
+	width: 1000px;
+	height: 45px;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.75;
+	opacity: .75;
+	filter: alpha(opacity=75);
+}
+
+/*******************
+ *** AJAX EDITOR ***
+ *******************/
+ 
+.inplaceeditor-saving {
+	background: url(../../../img/derco/defecto/guardando.gif) bottom right no-repeat;
+}
+
+/**************************
+ *** ESTADO POR COLORES ***
+ **************************/
+
+.rojo {
+	color: red;
+	font-weight: bold;
+}
+
+.verde {
+	color: green;
+	font-weight: bold;
+}
+
+.peligro {
+	background-color: #FFC3C3;
+}
+
+/***********************************
+ *** Tablero Taller de Servicios ***
+ ***********************************/
+ 
+.conoPlanificarOt {
+	border: 1px solid white;
+ 	font-size: 9.5pt;
+ 	display: inline;
+ 	padding: 2px 0px 0px 5px;
+}
+ 
+.conoAsesorDemo {
+	font-size: 7.7pt;
+	border: 1px solid #000;
+	display: inline;
+	padding-right : 50px;
+}
+
+/*****************************
+ *** Matriz de Ubicaciones ***
+ *****************************/
+
+#matrizUbicaciones {
+    font-size: 8pt;
+    border: 0px solid transparent;
+}
+
+#matrizUbicaciones th {
+    font-size: 8pt;
+    padding: 1px;
+    background-color: #abe;
+    border-left: 1px solid #eef ;
+    border-bottom: 1px solid #89c ;
+    border-top: 0 solid transparent;
+    width: 50px;
+}
+
+#matrizUbicaciones .th, 
+#matrizUbicaciones .th:hover {
+    font-size: 8pt;
+    padding: 1px;
+    /*background-color: #E6E6E6;*/
+    background-color: #abe;
+    border-left: 1px solid #eef ;
+    border-bottom: 1px solid #89c ;
+    border-right: 0 solid transparent;
+    border-top: 0 solid transparent;
+    text-align: center;
+    font-weight: bold;
+    width: 50px;
+}
+
+#matrizUbicaciones td {
+	height: 20px;
+	border-left: 0px solid transparent;
+	border-top: 0px solid transparent;
+}
+
+#matrizUbicaciones .celdaUbicacion:hover {
+	border: 1px solid black;
+}
+
+.celda {
+	display: block;
+	height: 16px;
+	width: 50px;
+	text-align: center;
+}
+
+.celdaUno {
+	border: 0px solid transparent;
+}
+
+.celdaEnBlanco, 
+.celdaBloqueada {
+	background-color: #FFFFFF;
+}
+
+.celdaActiva {
+	font-weight: bold;
+}
+
+.celdaDesactiva {
+	background-color: #D8D8D8;
+	font-weight: bold;
+}
+
+.celdaPlanificada {
+	background-color: #06B000;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.celdaNoPlanificada {
+	background-color: red;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.help {
+	cursor: help;
+}
+
+.qtipOut {
+	position: relative;
+}
+
+.qtipOut span {
+	display: none;
+}
+
+.qtipOut b, 
+.qtipOverLT2B div, 
+.qtipOverLB2T div, 
+.qtipOverRT2B div, 
+.qtipOverRB2T div {
+	display: block;
+}
+
+.qtipOverLT2B b, 
+.qtipOverLB2T b, 
+.qtipOverRT2B b, 
+.qtipOverRB2T b, 
+.qtipOut div {
+	display: none;
+}
+
+.qtipOverLT2B, 
+.qtipOverLB2T, 
+.qtipOverRT2B, 
+.qtipOverRB2T {
+	position: relative;
+}
+
+.qtipOverLT2B span, 
+.qtipOverLB2T span, 
+.qtipOverRT2B span, 
+.qtipOverRB2T span {
+	display: block;
+	position: absolute;
+	z-index: 6;
+	background-color: gray;
+	border: 1px solid black;
+	width: 580px;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	height: 90px;
+}
+
+.qtipOverLT2B span {
+	top: -2px;
+	left: 51px;
+}
+
+.qtipOverLB2T span {
+	top: -78px;
+	left: 51px;
+}
+
+.qtipOverRT2B span {
+	top: -2px;
+	left: -587px;
+}
+
+.qtipOverRB2T span {
+	top: -78px;
+	left: -587px;
+}
+
+.detalles {
+	background-color: gray;
+	color: white;
+	border: 0px solid gray;
+}
+
+.detalles .etiqueta {
+    font-size: 7.5pt;
+	font-weight: bold;
+	text-align: right;
+}
+
+.detalles .valor {
+    font-size: 7.5pt;
+	font-weight: normal;
+	text-align: left;
+}
+
+.cellOut span {
+	display: none;
+}
+
+.cellOver span {
+	display: block;
+}
+
+.tituloarchivo {
+	background-color: #FAFAFA;
+	margin: 0;
+	padding: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+
+.flash_session {
+	font-size: 9pt;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    color: #555;
+}
+
+.error_session{background-color: #FF0000 !important;}
+.susses_session{background-color: #00FA9A !important;}
+
+.error_session1{
+	background-color: #FF0000 !important;
+	color:white;
+	}
+	
+.error {
+    font-size: 7pt;
+	color: #D54500;
+}

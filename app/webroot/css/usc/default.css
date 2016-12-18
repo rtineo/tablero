@@ -1,0 +1,95 @@
+body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 5px;}
+
+#dialog_link, #titulo {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+#dialog_link span.ui-icon, #titulo {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+
+/**
+ * CONFIGURACIONES GENERALES
+ */
+.clear {clear:both;}
+.hide {display:none;}
+.usc-box {padding:2px;border:1px #009eba solid;margin-right:2px;margin-bottom:5px;background:#fff;height:100px;overflow:auto;}
+table tbody tr td.box {padding:2px;border:1px #009eba solid;margin-right:2px;margin-bottom:5px;background:#fff;}
+
+.shadow{
+  -webkit-box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
+  filter: shadow(color=#999999, direction=135, strength=2);
+}
+
+td.textr, .textr, input.textr {
+	text-align:right;
+}
+td.textc, .textc, input.textc {
+	text-align:center;
+}
+
+/* ESTILOS PARA EL DIV QUE SERA AFECTADO */
+.av-shadow-base {  
+	position: relative; width: 96%;  padding:1% 4%; overflow:hidden;
+}
+.usc-box-search {padding:3px;border:1px #009eba solid;margin-right:4px;margin-bottom:7px;background:#fff;}
+
+/**
+ * CONFIGURACIONES PARA EL BUSCADOR
+ */
+.usc-search-state {background-color:#DFEFFC;}
+
+ul.usc-search-icon {margin: 0; padding: 0;}
+ul.usc-search-icon li {margin: 2px; position: relative; padding: 1px 0; cursor: pointer; float: left;  list-style: none;}
+ul.usc-search-icon span.ui-icon {float: left; margin: 0 1px;}
+
+
+
+/** AVENTURA **/
+div.av_fondo_general {
+	background-color:#DDDDEE;
+}
+
+h2.av_titulo {
+	background-color:#99BBFF;
+	border-bottom: 1px solid #6688CC;
+    color: #FFFFFF;
+	font-size: 14pt;
+	margin: 0;
+	padding: 2px 0 0 10px;
+}
+
+table.av_table_base {
+	width:100%;
+}
+
+table.av_table_base
+,table.av_table_base tbody tr
+,table.av_table_base tbody td{
+	border:none !important;
+	padding: 0px;
+	vertical-align: middle;
+	font: 110% "Trebuchet MS",sans-serif;
+}
+
+table.av_table_base tbody td.av_titulo{
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+table.av_table_detalle{
+	border-collapse: collapse;
+}
+table.av_table_detalle th{
+	color:#000;
+    background-color: #AABBEE;
+    border-bottom: 1px solid #8899CC !important;
+    border-left: 1px solid #EEEEFF !important;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+    padding: 1px;
+}
+
+table.av_table_detalle tbody td{
+	border-bottom: 1px solid #8899CC !important;
+    border-left: 1px solid #EEEEFF !important;
+	border-right: 1px solid #DDDDEE !important;
+	padding: 1px 5px 0;
+	font-size: 8pt;
+}

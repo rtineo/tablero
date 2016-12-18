@@ -1,0 +1,93 @@
+.ToolText {
+	position: relative;
+}
+
+.ToolText a {
+	color: #fff;
+    text-decoration: none;
+}
+
+.ToolText a:hover {
+	color: red;
+}
+
+.ToolText span {
+	display: none;
+}
+
+
+.tooltipArriba span {
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	z-index: 6;
+	width: 525px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+}
+
+.tooltipArriba span .detalles {
+	background-color: gray;
+	color: white;
+    font-size: 8pt;
+	border-bottom: 0px solid gray;
+}
+.tooltipArriba span {
+	top: 250px;
+	left: 50px;
+	height: 200px;
+}
+
+/*-----------------*/
+.tooltipMedio span {
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	z-index: 6;
+	width: 525px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+}
+
+.tooltipMedio span .detalles {
+	background-color: gray;
+	color: white;
+    font-size: 8pt;
+	border-bottom: 0px solid gray;
+}
+.tooltipMedio span {
+	top: 270px;
+	left: 50px;
+	height: 200px;
+}
+/*------------------*/
+
+.tooltipAbajo span {
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	z-index: 6;
+	width: 525px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+}
+
+.tooltipAbajo span .detalles {
+	background-color: gray;
+	color: white;
+    font-size: 8pt;
+	border-bottom: 0px solid gray;
+}
+.tooltipAbajo span {
+	left: 50px;
+	height: 200px;
+}
+.div_textarea {
+	background-color: white;
+	border: 1px inset black;
+	color: black;
+	text-align: left;
+}

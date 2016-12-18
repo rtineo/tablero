@@ -1,0 +1,141 @@
+body {
+    background-color: #eef;
+}
+
+.centrado {
+    text-align: center;
+}
+
+#tituloVentana {
+    width: 100%;
+}
+
+#tituloVentana th {
+    background-color: #e53a28;
+    font-size: 12pt;
+    color: white;
+}
+
+#formularioEdicion,
+.formularioEdicion{
+    font-size: 8pt;
+}
+
+#formularioEdicion td,
+.formularioEdicion td{
+    padding-top: 2px;
+	vertical-align: top;
+}
+
+#formularioEdicion td.cabecera,
+.formularioEdicion td.cabecera{
+	height: 28px;	
+    text-align: center;
+	background-color: #2977C1;
+	padding-bottom: 1px;
+	border-bottom: 1px #16b solid;
+	font-size: 8pt;
+	color:#fff;
+}
+
+#formularioEdicion td.columnaCabecera,
+.formularioEdicion td.columnaCabecera{	
+	color:#fff;	 
+    background-color: #2977C1;
+	border-left: 1px #eef solid;
+    text-align: left;
+    padding: 0px 0px 3px 5px;
+}
+
+#formularioEdicion .titulo,
+.formularioEdicion .titulo{
+    background-color: #2977C1;
+    font-size: 8pt;
+    color: white;
+}
+
+#formularioEdicion .etiqueta,
+.formularioEdicion .etiqueta{
+    font-weight: bold;
+    text-align: right;
+    padding: 0px 5px 0px 10px;
+	vertical-align: top;
+}
+
+#formularioEdicion .valor,
+.formularioEdicion .valor{
+    text-align: left;
+}
+
+label.error{
+	display:block;
+	color: red;
+	font-size: 8pt; 	
+}
+
+#formularioEdicion .valor input,
+.formularioEdicion .valor input{
+    font-size: 8pt;
+}
+
+#formularioEdicion .valor textarea,
+.formularioEdicion .valor textarea{
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+#formularioEdicion .valor select,
+.formularioEdicion .valor select{
+    font-size: 8pt;
+}
+
+#formularioEdicion .errorValidacion,
+.formularioEdicion .errorValidacion{
+    color: red;
+    font-size: 8pt;
+}
+
+#formularioEdicion .accion,
+.formularioEdicion .accion{
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.boton {
+    background-color: #eee;
+    border: 1px solid;
+    border-color: #fff #ccc #ccc #fff;
+    padding: 5px;
+    margin: 0px 5px 0px 0px
+}
+
+.boton a {
+    color: #000;
+    text-decoration: none;
+}
+
+.boton a:hover {
+    color: #f80;
+    text-decoration: none;
+}
+
+.accion {
+    text-align: center;
+}
+
+
+/***************/
+/* CLASES CAKE */
+/***************/
+
+#flashMessage {
+    font-size: 9pt;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    background-color: #ffa;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0px;
+}

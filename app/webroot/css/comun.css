@@ -1,0 +1,85 @@
+
+#listaPrincipal {
+    width: 100%;
+    font-size: 8pt;
+}
+
+#listaPrincipal th {
+    padding: 1px;
+    background-color: #abe;
+    border-left: 1px solid #eef ;
+    border-bottom: 1px solid #89c ;
+}
+
+#listaPrincipal td {
+    font-size: 8pt;
+    padding: 1px 5px 0px 5px;
+    border-right: 1px solid #dde;
+}
+
+#listaPrincipal .numero {
+    text-align: right;
+}
+
+#listaPrincipal .texto {
+    text-align: left;
+}
+
+#listaPrincipal .centrado {
+    text-align: center;
+}
+
+#listaPrincipal tr.par {
+    background-color: #eef;
+}
+
+#listaPrincipal tr.impar {
+    background-color: #fff;
+}
+
+#listaPrincipal tr.par:hover {
+    background-color: #fea;
+}
+
+#listaPrincipal tr.impar:hover {
+    background-color: #fea;
+}
+
+#listaPrincipal td.accion {
+    font-size: 8pt;
+    text-align: center;
+}
+
+#listaPrincipal td.accion a {
+    color: #000;
+    text-decoration: none;
+}
+
+#listaPrincipal td.accion a:hover {
+    color: #f80;
+}
+
+/* buscadorBasico
+ * Para el elemento buscador_basico
+ */
+
+#buscadorBasico {
+    font-size: 8pt;
+    width: 100%;
+    background-color: #eef;
+    padding: 5px;
+    border: 1px none #ccd ;
+    border-bottom-style: solid;
+}
+
+#buscadorBasico .etiqueta {
+}
+
+#buscadorBasico select {
+    font-size: 8pt;
+    width: 150px;
+}
+
+#buscadorBasico input {/* mejorar esto para poder separarlo por tipos */
+    font-size: 10pt;
+}

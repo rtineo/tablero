@@ -1,0 +1,133 @@
+/*
+a {
+   display: inline-block;
+   position: relative;
+   margin: 10px 0;
+   background: #c0df71;
+   color: #fff;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	 border-radius:10px;
+	text-decoration: none;
+	padding: 10px;
+}
+*/
+.tooltip{
+
+   position: absolute; 
+/*
+   background: #c0df71;
+   color: #fff;
+   border-radius:10px;
+
+
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding: 10px;
+
+	margin-top: -10px;
+	margin-left: 10px;
+   z-index: 3; */
+
+   display: none;
+
+	background-color: #500050;
+
+}
+
+.tooltip-seg{
+   position: absolute;
+   background: #c0df71;
+   color: #fff;
+   border-radius:10px;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding: 10px;
+	margin-top: -10px;
+	margin-left: 30px;
+   z-index: 3;
+   display: none;
+	background-color: #ff934f;
+}
+            
+.ToolText {
+	position: relative;
+}
+
+.ToolText a {
+	color: #fff;
+    text-decoration: none;
+}
+
+.ToolText a:hover {
+	color: red;
+}
+
+
+.tooltipArriba span {
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	z-index: 6;
+	width: 525px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+}
+
+.tooltipArriba span .detalles {
+	background-color: gray;
+	color: white;
+    font-size: 8pt;
+	border-bottom: 0px solid gray;
+}
+.tooltipArriba span {
+	top: 100px;
+	left: 110px;
+	height: 120px;
+}
+
+/*-----------------*/
+.tooltipMedio span {
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	z-index: 6;
+	width: 525px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+}
+
+.tooltipMedio span .detalles {
+	background-color: gray;
+	color: white;
+    font-size: 8pt;
+	border-bottom: 0px solid gray;
+}
+.tooltipMedio span {
+	top: 270px;
+	left: 50px;
+	height: 200px;
+}
+/*------------------*/
+
+.tooltipAbajo span {
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	z-index: 6;
+	width: 525px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+}
+
+.tooltipAbajo span .detalles {
+	background-color: gray;
+	color: white;
+    font-size: 8pt;
+	border-bottom: 0px solid gray;
+}
+.tooltipAbajo span {
+	top: 290px;
+	left: 50px;
+	height: 200px;
+}

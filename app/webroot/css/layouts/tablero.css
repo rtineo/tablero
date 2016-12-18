@@ -1,0 +1,533 @@
+/*************************
+ *** TABLERO DE TALLER ***
+ *************************/
+
+.horas {
+	display: inline;
+	text-align: center;
+	font-size: 9pt;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+}
+
+form {
+	margin: 0px;
+}
+
+table.contenedor td {
+    vertical-align: top;
+}
+
+table.tablero {
+    /*background-color: #abe;*/
+    font-size: 9pt;
+}
+
+table.tablero th {
+    height: 9pt;
+	background-color: #AABBEE;
+	border-bottom:1px solid #8899CC;
+	border-left:1px solid #EEEEFF;
+	font-size:9pt;
+	cursor: pointer;
+}
+
+table.tablero td {
+    /*background-color: #fff;*/
+	border-bottom: 1px solid #dde;
+	/*border-left:1px solid #EEEEFF;*/
+	font-size:8pt;
+}
+
+table.tablero td.columnaAjax {
+	border-bottom: 1px solid #FFFFFF;
+	text-align: center;
+}
+
+table.tablero th.horario {
+	background-color: transparent;
+	border-bottom: 1px solid transparent;
+	text-align: left;
+}
+
+table.horas {
+    background-color: #ccc;
+}
+
+table.horas td {
+    width: 120px; /*si se cambia el valor tambien cambiar la variable $hora_ancho en el controlador*/
+    text-align: left;
+    font-size: 9pt;
+}
+
+table.horas td.par {
+    background-color:#efefef;
+}
+
+table.horas td.impar {
+    background-color: #d8d8d8;
+}
+table.horas tr.par {
+    background-color: #f2f2ff;
+}
+
+table.horas tr.impar {
+    background-color: #ffffff;
+}
+.par{
+	background-color: #f2f2ff;
+}
+
+.impar{
+	background-color: #ffffff;
+}
+
+.detalles {
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+.cabeceraFecha {
+	font-size: 14pt;
+	font-weight: bold;
+	position: absolute;
+	top: 2px;
+	right: 10px;
+}
+
+.reprogramar {
+	font-weight: bold;
+}
+
+.reprogramar a {
+    text-decoration: none;
+}
+
+.ToolText {
+	position: relative;
+	/*z-index:2;*/
+	/*overflow: scroll;*/
+}
+
+.ToolText a {
+	color: #fff;
+    text-decoration: none;
+}
+
+.ToolText a:hover {
+	color: red;
+}
+
+.ToolText span {
+	display: none;
+}
+
+.tthColProgramarT2B, 
+.tthColProgramarB2T, 
+.tthColReprogramarT2B, 
+.tthColReprogramarB2T, 
+.tthColSeguimientoT2B, 
+.tthColSeguimientoB2T, 
+.tthColInspeccionT2B, 
+.tthColInspeccionB2T, 
+.tthColLavadoT2B, 
+.tthColLavadoB2T, 
+.tthColAsesorT2B, 
+.tthColAsesorB2T, 
+.tthColEntregaT2B, 
+.tthColEntregaB2T {
+	position: relative;
+	cursor: help;
+}
+
+.tthColProgramarT2B span, 
+.tthColProgramarB2T span, 
+.tthColReprogramarT2B span, 
+.tthColReprogramarB2T span, 
+.tthColSeguimientoT2B span, 
+.tthColSeguimientoB2T span, 
+.tthColInspeccionT2B span, 
+.tthColInspeccionB2T span, 
+.tthColLavadoT2B span, 
+.tthColLavadoB2T span, 
+.tthColAsesorT2B span, 
+.tthColAsesorB2T span, 
+.tthColEntregaT2B span, 
+.tthColEntregaB2T span {
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	z-index: 6;
+	width: 525px;
+	background-color: gray;
+	color: white;
+	text-align: center;
+}
+
+.tthColProgramarT2B span {
+	top: -1px;
+	left: 61px;
+	height: 130px;/*estaba 230*/
+}
+
+.tthColProgramarB2T span {
+	top: -215px;
+	left: 61px;
+	height: 130px;/*estaba 230*/
+}
+
+.tthColReprogramarT2B span {
+	top: -1px;
+	left: 76px;
+	height: 230px;
+}
+
+.tthColReprogramarB2T span {
+	top: -217px;
+	left: 76px;
+	height: 230px;
+}
+
+.tthColSeguimientoT2B span {
+	top: 16px;
+	left: -140px;
+	height: 130px; /*estaba 350*/
+}
+
+.tthColSeguimientoB2T span {
+	top: -352px;
+	left: -140px;
+	height: 130px; /*estaba 350*/
+}
+
+.tthColInspeccionT2B span {
+	top: -1px;
+	left: -527px;
+	height: 350px;
+}
+
+.tthColInspeccionB2T span {
+	top: -205px;
+	left: -527px;
+	height: 350px;
+}
+
+.tthColLavadoT2B span {
+	top: -1px;
+	left: -527px;
+	height: 350px;
+}
+
+.tthColLavadoB2T span {
+	top: -205px;
+	left: -527px;
+	height: 350px;
+}
+
+.tthColAsesorT2B span {
+	top: -1px;
+	left: -527px;
+	height: 350px;
+}
+
+.tthColAsesorB2T span {
+	top: -199px;
+	left: -527px;
+	height: 350px;
+}
+
+.tthColEntregaT2B span {
+	top: -1px;
+	left: -527px;
+	height: 350px;
+}
+
+.tthColEntregaB2T span {
+	top: -199px;
+	left: -527px;
+	height: 350px;
+}
+
+.tthColProgramarT2B span .detalles, 
+.tthColProgramarB2T span .detalles, 
+.tthColReprogramarT2B span .detalles, 
+.tthColReprogramarB2T span .detalles, 
+.tthColSeguimientoT2B span .detalles, 
+.tthColSeguimientoB2T span .detalles, 
+.tthColInspeccionT2B span .detalles, 
+.tthColInspeccionB2T span .detalles, 
+.tthColLavadoT2B span .detalles, 
+.tthColLavadoB2T span .detalles, 
+.tthColAsesorT2B span .detalles, 
+.tthColAsesorB2T span .detalles, 
+.tthColEntregaT2B span .detalles, 
+.tthColEntregaB2T span .detalles {
+	background-color: gray;
+	color: white;
+    font-size: 8pt;
+	border-bottom: 0px solid gray;
+}
+
+.centrado {
+	text-align: center;
+}
+
+.etiqueta {
+	text-align: right;
+}
+
+.valor {
+	text-align: left;
+}
+
+.help {
+	cursor: help;
+}
+
+.div_textarea {
+	background-color: white;
+	border: 1px inset black;
+	color: black;
+	text-align: left;
+}
+
+.reglaHora {
+	/*height: 680pt;*/
+	background-color: #fff;
+	border-right: 1px solid red;
+	position: absolute;
+	margin-top: -16px;
+	z-index: 5;
+}
+
+.cono {
+	display: inline;
+	/*font-size: 7.7pt;*/
+	font-size: 4.5pt;/*de prueba*/
+	border: 1px solid #fff; 
+}
+
+.adicional {
+	height: 17px;
+	border: 1px solid yellow;
+	vertical-align: middle;
+}
+
+.otLink {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.otBordes {
+	border: 1px solid #E0E0E0;
+}
+
+.otBordes:hover {
+	border: 1px solid black;
+}
+
+/*********************************************
+ ******* ESTADO POR COLORES - ENTREGAS *******
+ *********************************************/
+
+.pendiente_entrega {
+	display: block;
+	background-color: yellow;
+	border-bottom: 1px solid #dde;
+}
+
+.atrasado_entrega {
+	display: block;
+	background-color: red;
+	border-bottom: 1px solid #dde;
+	color: white;
+	font-weight: bold;
+}
+
+/*********************************************
+ *** ESTADO POR COLORES - OTS SUSPENDIDAS ****
+ ********************************************/
+
+.suspendidasOK {
+	text-align: center;
+	vertical-align: middle;
+	/*background-color: #00FF00;*/
+}
+
+.suspendidasKO {
+	text-align: center;
+	vertical-align: middle;
+	/*background-color: #FF0000;*/
+}
+
+/*********************************************
+ *** ESTADO POR COLORES - TALLER SERVICIOS ***
+ ********************************************/
+
+.planeado {
+	height: 10pt;
+	/*font-size: 7.7pt;*/
+	font-size: 7.9pt;/*de prueba*/
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: #4E65FE;
+	position: absolute;
+	margin-top: -18px;
+	border-bottom: 2px solid #627dff;
+	border-left: 0px solid #7dbeff;
+	border-right: 0px solid #7dbeff;
+	border-top: 1px solid #627dff;
+	/*border-right: 1px solid white;*/
+}
+
+.planeado a, .planeado a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.planeado_atrasado {
+	height: 10pt;
+	/*font-size: 7.7pt;*/
+	font-size: 7.9pt;/*de prueba*/
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: red;
+	position: absolute;
+	margin-top: -18px;
+	border-bottom: 2px solid #ff9595;
+	border-left: 0px solid #ff7171;
+	border-right: 0px solid #ff7171;
+	border-top: 1px solid #ff9595;
+	/*border-right: 1px solid white;*/
+}
+
+.planeado_atrasado a, .planeado_atrasado a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.pendiente {
+	height: 10pt;
+	font-size: 7.9pt;
+	text-align: center;
+	font-weight: bold;
+	/*color: white;*/
+	color: black;/*de prueba*/
+	/*background-color: #fb0;*/
+	background-color: #FEDC00;/*de prueba*/
+	position: absolute;
+	border-bottom: 2px solid #ffff80;
+	border-left: 0px solid #ff7171;
+	border-right: 0px solid #ff7171;
+	border-top: 1px solid #ffff80;
+	/*border-right: 1px solid white;*/
+}
+
+.terminado {
+	/*z-index: 5;*/
+	height: 10pt;
+	font-size: 7.9pt;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: #06B000;
+	position: absolute;
+	border-bottom: 2px solid #81cd83;
+	border-left: 0px solid #ff7171;
+	border-right: 0px solid #ff7171;
+	border-top: 1px solid #81cd83;
+	/*border-right: 1px solid white;*/
+}
+
+.atrasado {
+	height: 10pt;
+	font-size: 7.9pt;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: red;
+	position: absolute;
+	border-left: 1px solid white;
+	/*border-right: 1px solid white;*/
+}
+
+.suspendido {
+	height: 10pt;
+	font-size: 7.9pt;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: purple;
+	position: absolute;
+	border-bottom: 2px solid #bf00bf;
+	border-left: 0px solid #ff7171;
+	border-right: 0px solid #ff7171;
+	border-top: 1px solid #bf00bf;
+	/*border-right: 1px solid white;*/
+}
+
+.tiempolibre {
+	-moz-opacity: 0.1;
+	opacity: 0.1;
+	z-index: 0;
+	height: 29pt;
+	font-size: 8pt;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color: #abe;
+	position: absolute;
+	margin-top: -18px;
+	border-left: 1px solid white;
+	/*border-right: 1px solid white;*/
+}
+
+.capa_transparente {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: -500px;
+	width: 525px;
+	height: 270px;
+	background-color: yellow;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	z-index: 1;
+	margin-top: -18px;
+}
+
+/**********************************************
+ *** ESTADO POR COLORES - TALLER PREENTREGA ***
+ **********************************************/
+
+.rojo {
+	background-color: red;
+	color: white;
+	font-weight: bold;
+}
+
+.amarillo {
+	background-color: yellow;
+}
+
+.verde {
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
+
+.azul {
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}

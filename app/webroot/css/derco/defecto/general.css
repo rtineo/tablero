@@ -1,0 +1,26 @@
+.hide {
+	display:none;
+}
+body {
+	background-color: #F8F8FF;
+}
+
+input[readonly=readonly], input.readonly{
+	background-color: #F5F5F5 !important;
+}
+
+.offColor {
+	background-color:#FDE9D9;
+}
+
+.text_right{
+	text-align:right;
+}
+
+label.error {
+	color : red;
+}
+
+input.error {
+	background-color: : red !important;
+}

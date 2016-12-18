@@ -1,0 +1,50 @@
+// ELECCION DE ASESOR PARA LAS CITAS EN SAP
+Model: Agedetallecita
+Function: getAsesorDetallecita
+
+// WEB SERVICES
+http://localhost/presis_10_110_50_27/webservicessaps/getConsultaClientePlaca
+
+// BOTONES
+http://localhost/presis_10_110_50_27/Agecitacalendarios/add
+
+//COMBO ANIDADO
+
+
+// VISUALIZAR QUERYS
+<?php echo $this->element('sql_dump'); ?>
+
+// HISTORIAL
+<?php 
+							echo '&nbsp';
+							echo $this->Xhtml->imagelink('derco/defecto/csv.png', __('hisTrabajosInternos'),
+					                	'javascript:;',array('onclick'=>"verHistorial('".$otCars['Talot']['ot_numero']."')"),
+					                	null, array('width'=>'16'));
+					?>
+					
+function verHistorial(ot_nro) {
+	    var url = "<?php echo $this->Html->url('/ccptrabajointernos/view/')?>"+ot_nro;
+	    var w = window.open(url, 'agregar', 
+	        'scrollbars=yes,resizable=yes,width=650,height=500,top=115,left=200,status=no,location=no,toolbar=no');
+	}
+	
+// PRUEBAS
+		$cnd = sprintf("LTRIM(RTRIM(SistemaPlanificadorCcp.USUARIO_OT)) = '%s'",utf8_encode('Tejerina Saldaña Ruben Alexis'));
+		$cnd = sprintf("LTRIM(RTRIM(SistemaPlanificadorCcp.USUARIO_OT)) = '%s'",'Tejerina Saldaña Ruben Alexis');
+		debug($cnd);
+ 		$this->paginate = array(
+			'SistemaPlanificadorCcp'=>array('limit' => 10,
+				'page' => 1,
+				'order' => array ('SistemaPlanificadorCcp.FECHA' => 'DESC'),
+				'conditions' => $cnd
+			)
+		); 
+		
+		$otsCars = empty($exportar)?$this->paginate('SistemaPlanificadorCcp')
+			:$this->SistemaPlanificadorCcp->find('all',array('conditions'=>$cnd, 'order'=>array('SistemaPlanificadorCcp.FECHA' => 'DESC')));
+		debug($otsCars);
+		return true;
+//		$dtLg = $this->_getDtLg();
+//		$project = $this->Secproject->findById($dtLg['Secproject']['id'], null,null,-1);
+//		$asesoresCars = $this->Ccptabhistorial->getAsesoresCars($project['Secproject']['carscod']);
+//		die;

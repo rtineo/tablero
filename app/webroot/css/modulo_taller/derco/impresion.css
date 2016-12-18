@@ -1,0 +1,53 @@
+/* ESTILOS PARA IMPRESIONES */
+
+.bodyImpresion {
+	background: #FFFFFF;
+}
+
+.frameImpresion {
+    width: 17.1cm; 
+    height: 23.1cm; 
+    background-color: #FFFFFF; 
+    padding: 0cm;
+    margin: 0cm;
+    border: none;
+}
+
+.title {
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12pt;
+}
+
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+
+.bold {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+table.tablaParametros {
+    font-style: italic;
+    font-size: 10pt;
+}
+
+table.main {
+    font-style: normal;
+    font-size: 8pt;
+    border: 1px black;
+    border-style: solid none solid none;
+}
+
+table.main tr {
+    border: 1px #ccc;
+    border-style: none none solid none;
+}
