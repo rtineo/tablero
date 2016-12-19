@@ -2,17 +2,17 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "cakephp-mysql-persistent",
+    "name": "tablero",
     "annotations": {
-      "openshift.io/display-name": "CakePHP + MySQL (Persistent)",
-      "description": "An example CakePHP application with a MySQL database. For more information about using this template, including OpenShift considerations, see https://github.com/openshift/cakephp-ex/blob/master/README.md.",
+      "openshift.io/display-name": "CakePHP + Postgres (Persistent)",
+      "description": "An example CakePHP application with a Postgres database. For more information about using this template, including OpenShift considerations, see https://github.com/openshift/cakephp-ex/blob/master/README.md.",
       "tags": "quickstart,php,cakephp",
       "iconClass": "icon-php"
     }
   },
   "message": "The following service(s) have been created in your project: ${NAME}, ${DATABASE_SERVICE_NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/openshift/cake-ex/blob/master/README.md.",
   "labels": {
-    "template": "cakephp-mysql-persistent"
+    "template": "tablero"
   },
   "objects": [
     {
@@ -148,7 +148,7 @@
                 "command": [
                   "./migrate-database.sh"
                 ],
-                "containerName": "cakephp-mysql-persistent"
+                "containerName": "tablero"
               }
             }
           }
@@ -159,7 +159,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "cakephp-mysql-persistent"
+                "tablero"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -185,7 +185,7 @@
           "spec": {
             "containers": [
               {
-                "name": "cakephp-mysql-persistent",
+                "name": "tablero",
                 "image": " ",
                 "ports": [
                   {
@@ -296,9 +296,9 @@
       "spec": {
         "ports": [
           {
-            "name": "mysql",
-            "port": 3306,
-            "targetPort": 3306
+            "name": "postgresql",
+            "port": 5432,
+            "targetPort": 5432
           }
         ],
         "selector": {
@@ -325,12 +325,12 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "mysql"
+                "postgresql"
               ],
               "from": {
                 "kind": "ImageStreamTag",
                 "namespace": "${NAMESPACE}",
-                "name": "mysql:5.6"
+                "name": "postgresql:9.5"
               }
             }
           },
@@ -360,7 +360,7 @@
             ],
             "containers": [
               {
-                "name": "mysql",
+                "name": "postgresql",
                 "image": " ",
                 "ports": [
                   {
@@ -370,14 +370,14 @@
                 "volumeMounts": [
                   {
                     "name": "${DATABASE_SERVICE_NAME}-data",
-                    "mountPath": "/var/lib/mysql/data"
+                    "mountPath": "/var/lib/pgsql/data"
                   }
                 ],
                 "readinessProbe": {
                   "timeoutSeconds": 1,
                   "initialDelaySeconds": 5,
                   "exec": {
-                    "command": [ "/bin/sh", "-i", "-c", "MYSQL_PWD='${DATABASE_PASSWORD}' mysql -h 127.0.0.1 -u ${DATABASE_USER} -D ${DATABASE_NAME} -e 'SELECT 1'" ]
+                    "command": [ "/bin/sh", "-i", "-c", "PSQL_PWD='${DATABASE_PASSWORD}' psql -h 127.0.0.1 -U ${DATABASE_USER} -D ${DATABASE_NAME} -c 'SELECT 1'" ]
                   }
                 },
                 "livenessProbe": {
@@ -389,7 +389,7 @@
                 },
                 "env": [
                     {
-                      "name": "MYSQL_USER",
+                      "name": "POSTGRESQL_USER",
                       "valueFrom": {
                         "secretKeyRef" : {
                           "name" : "${NAME}",
@@ -398,7 +398,7 @@
                       }
                     },
                     {
-                      "name": "MYSQL_PASSWORD",
+                      "name": "POSTGRESQL_PASSWORD",
                       "valueFrom": {
                         "secretKeyRef" : {
                           "name" : "${NAME}",
@@ -407,7 +407,7 @@
                         }
                     },
                     {
-                        "name": "MYSQL_DATABASE",
+                        "name": "POSTGRESQL_DATABASE",
                         "value": "${DATABASE_NAME}"
                     }
                 ],
@@ -429,7 +429,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "cakephp-mysql-persistent"
+      "value": "tablero"
     },
     {
       "name": "NAMESPACE",
@@ -447,8 +447,8 @@
     },
     {
       "name": "MEMORY_MYSQL_LIMIT",
-      "displayName": "Memory Limit (MySQL)",
-      "description": "Maximum amount of memory the MySQL container can use.",
+      "displayName": "Memory Limit (Postgres)",
+      "description": "Maximum amount of memory the Postgres container can use.",
       "required": true,
       "value": "512Mi"
     },
@@ -493,14 +493,14 @@
       "name": "DATABASE_SERVICE_NAME",
       "displayName": "Database Service Name",
       "required": true,
-      "value": "mysql"
+      "value": "postgresql"
     },
     {
       "name": "DATABASE_ENGINE",
       "displayName": "Database Engine",
       "description": "Database engine: postgresql, mysql or sqlite (default).",
       "required": true,
-      "value": "mysql"
+      "value": "postgresql"
     },
     {
       "name": "DATABASE_NAME",
