@@ -1,3 +1,20 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @rtineo
+ Watch 56
+  Star 7
+  Fork 343 openshift/cakephp-ex
+ Code  Issues 2  Pull requests 1  Projects 0  Pulse  Graphs
+Tree: 47f033fbbc Find file Copy pathcakephp-ex/app/Config/database.php
+47f033f  15 days ago
+@oatmealraisin oatmealraisin Update images to mysql5.6
+3 contributors @jhadvig @oatmealraisin @bparees
+RawBlameHistory     
+101 lines (95 sloc)  3.82 KB
 <?php
 /**
  * This is core configuration file.
