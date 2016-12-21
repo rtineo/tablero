@@ -2,28 +2,23 @@
 /**
  * This is core configuration file.
  *
- * Use it to configure core behaviour of Cake.
+ * Use it to configure core behaviour of CakePHP.
  *
  * PHP 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
  * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
  * @package       app.Config
  * @since         CakePHP(tm) v 0.2.9
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
- */
-/**
- * In this file you set up your database connection details.
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  *
- * @package       cake.config
- */
-/**
  * Database configuration class.
  * You can specify multiple configurations for production, development and testing.
  *
@@ -34,7 +29,7 @@
  *		Database/Sqlserver	- Microsoft SQL Server 2005 and higher
  *
  * You can add custom database datasources (or override existing datasources) by adding the
- * appropriate file to app/Model/Datasource/Database.  Datasources should be named 'MyDatasource.php',
+ * appropriate file to app/Model/Datasource/Database. Datasources should be named 'MyDatasource.php',
  *
  *
  * persistent => true / false
@@ -44,11 +39,12 @@
  * the host you connect to the database. To add a socket or port number, use 'port' => #
  *
  * prefix =>
- * Uses the given prefix for all the tables in this database.  This setting can be overridden
+ * Uses the given prefix for all the tables in this database. This setting can be overridden
  * on a per-table basis with the Model::$tablePrefix property.
  *
  * schema =>
- * For Postgres specifies which schema you would like to use the tables in. Postgres defaults to 'public'.
+ * For Postgres/Sqlserver specifies which schema you would like to use the tables in. Postgres defaults to 'public'. For Sqlserver, it defaults to empty and use
+ * the connected user's default schema (typically 'dbo').
  *
  * encoding =>
  * For MySQL, Postgres specifies the character encoding to use when connecting to the
@@ -56,48 +52,44 @@
  *
  * unix_socket =>
  * For MySQL to connect via socket specify the `unix_socket` parameter instead of `host` and `port`
+ *
+ * settings =>
+ * Array of key/value pairs, on connection it executes SET statements for each pair
+ * For MySQL : http://dev.mysql.com/doc/refman/5.7/en/set-statement.html
+ * For Postgres : http://www.postgresql.org/docs/9.2/static/sql-set.html
+ * For Sql Server : http://msdn.microsoft.com/en-us/library/ms190356.aspx
  */
 class DATABASE_CONFIG {
-
-	public $default = array(
-		'datasource' => 'Database/Postgres',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'postgres',
-		'password' => 'cobalto',
-		'database' => 'tablero',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
-
-	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
-	
+        public $default = array(
+            'datasource' => 'Database/Mysql',
+            'persistent' => false,
+            'host'       => '',
+            'port'       => '',
+            'login'      => '',
+            'password'   => '',
+            'database'   => '',
+            'prefix'     => '',
+            'encoding' => 'utf8',
+        );
+        public $test = array(
+            'datasource' => 'Database/Mysql',
+            'persistent' => false,
+            'host'       => '',
+            'port'       => '',
+            'login'      => '',
+            'password'   => '',
+            'database'   => 'test_database',
+            'prefix'     => '',
+            'encoding' => 'utf8',
+        );
 	public function __construct() {
-		if (getenv("OPENSHIFT_MYSQL_DB_HOST")){
-		$this->default['host']       = getenv("OPENSHIFT_MYSQL_DB_HOST");
-		$this->default['port']       = getenv("OPENSHIFT_MYSQL_DB_PORT");
-		$this->default['login']      = getenv("OPENSHIFT_MYSQL_DB_USERNAME");
-		$this->default['password']   = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
-		$this->default['database']   = getenv("OPENSHIFT_APP_NAME");
-		$this->default['datasource'] = 'Database/Mysql';
-		$this->test['datasource']    = 'Database/Mysql';
-		}else{
-		$this->default['host']       = getenv("OPENSHIFT_POSTGRESQL_DB_HOST");
-		$this->default['port']       = getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
-		$this->default['login']      = getenv("OPENSHIFT_POSTGRESQL_DB_USERNAME");
-		$this->default['password']   = getenv("OPENSHIFT_POSTGRESQL_DB_PASSWORD");
-		$this->default['database']   = getenv("OPENSHIFT_APP_NAME");
-		$this->default['datasource'] = 'Database/Postgres';
-		$this->test['datasource']    = 'Database/Postgres';
-		}
+        $datasource = 'Database/'.ucfirst(getenv('DATABASE_ENGINE'));
+        $this->default['host']       = getenv(strtoupper(getenv("DATABASE_SERVICE_NAME"))."_SERVICE_HOST");
+        $this->default['port']       = getenv(strtoupper(getenv("DATABASE_SERVICE_NAME"))."_SERVICE_PORT");
+        $this->default['login']      = getenv("DATABASE_USER");
+        $this->default['password']   = getenv("DATABASE_PASSWORD");
+        $this->default['database']   = getenv("DATABASE_NAME");
+        $this->default['datasource'] = $datasource;
+        $this->test['datasource']    = $datasource;
 	}
 }
