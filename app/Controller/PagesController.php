@@ -53,13 +53,14 @@ class PagesController extends AppController {
  */
 	public function display() {
 		$path = func_get_args();
-
 		$count = count($path);
 		if (!$count) {
-			$this->redirect('/');
+			return $this->redirect('/');
+		}
+		if (in_array('..', $path, true) || in_array('.', $path, true)) {
+			throw new ForbiddenException();
 		}
 		$page = $subpage = $title_for_layout = null;
-
 		if (!empty($path[0])) {
 			$page = $path[0];
 		}
@@ -70,7 +71,14 @@ class PagesController extends AppController {
 			$title_for_layout = Inflector::humanize($path[$count - 1]);
 		}
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
-		$this->render(implode('/', $path));
+		try {
+			$this->render(implode('/', $path));
+		} catch (MissingViewException $e) {
+			if (Configure::read('debug')) {
+				throw $e;
+			}
+			throw new NotFoundException();
+		}
 	}
 	
 	public function home() {
