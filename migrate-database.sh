@@ -2,7 +2,7 @@
 set -e 
 
 if [ ! -f app/Config/Schema/schema.php ]; then
-	echo "Generating database schema 'cake schema generate' ..."
+	echo "Generating database schema update 'cake schema generate' ..."
 	cake schema generate
 fi
 
